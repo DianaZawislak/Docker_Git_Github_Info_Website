@@ -1,8 +1,6 @@
+
 body {
-font-size: 100%;
-}
-body {
- background-color: silver;
+background-image: linear-gradient(silver, #545454);
 }
 
 .darkgrey {
@@ -16,11 +14,18 @@ body {
 .hand {
  font-family: "lucida handwriting", "Courier New", monospace;
 }
+/*-------------------------------Borders---------------------------------*/
 
 .outset {
  border-style: outset;
  border-color: dimgrey;
  border-width: 10px;
+}
+
+.outset1 {
+ border-style: outset;
+ border-color: dimgrey;
+ border-width: 15px;
 }
 
 .font25 {
@@ -58,7 +63,7 @@ font-size: 25px;
 
 
 .font60
-font-size: 60px;
+font-size: 60px !important;
 }
 
 .custnav {
@@ -82,4 +87,40 @@ font-size: 60px;
 .px-right {
   padding-left: ($spacer * 5) !important;
 
+}
+.b {
+  flex: 1;
+  text-align: right;
+}
+
+.box {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+.boxdiv {
+  width: auto;
+  height: auto;
+}
+
+.navbar-brand {
+  font-family: 'Copperplate, Papyrus, fantasy' !important;
+    font-size: xx-large;
+}
+
+.navbar {
+    font-family: 'Copperplate, Papyrus, fantasy' !important;
+}
+
+.nav-link {
+  font-family: 'Copperplate, Papyrus, fantasy' !important;
+    font-size: large;
+}
+.ml-auto {
+    margin-left: auto !important;
+}
+
+
+.backgroundgradient {
+    background-image: var(--bs-gradient);
 }

@@ -1,4 +1,99 @@
 {% extends "base.html" %}
 {% block content %}
-    Index Page
+
+<!-----------------------------------Carousel----------------------------------->
+<div>
+    <div class="row mb-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item outset1 active">
+                    <img src="{{ url_for('static', filename='images/GitHub.png') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item outset">
+                    <img src="{{ url_for('static', filename='images/flask.png') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item outset">
+                    <img src="{{ url_for('static', filename='images/docker.png') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item outset">
+                    <img src="{{ url_for('static', filename='images/CI-CD.png') }}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-----------------------------------CARDS----------------------------------->
+
+</div>
+    <div class="row mb-5">
+        <div class="col-sm-3">
+            <div class="card text-white bg-secondary style=width: 12rem;">
+                <div class="card-header">
+                    Git an GitHub
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">GitHub</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text font18">Visit link below to discover GitHub</p>
+                    <a href="#" class="card-link darkgrey">https://www.nycgo.com/</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white bg-secondary style=width: 12rem;">
+                <div class="card-header">
+                    Docker and DockerHub
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Docker</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text font18">Visit link below to discover Docker and DockerHub</p>
+                    <a href="#" class="card-link darkgrey">https://www.nycgo.com/</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white bg-secondary style=width: 12rem;">
+                <div class="card-header">
+                    Python and Flask
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Python and Flask</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Python and Flask</h6>
+                    <p class="card-text font18 ">Visit link below to discover Python and Flask</p>
+                    <a href="#" class="card-link darkgrey">https://visitdetroit.com/</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-white bg-secondary style=width: 12rem;">
+                <div class="card-header">
+                    CI/CD
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">	Continuous Integration/Continuous Deployment
+</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p class="card-text font18">Visit link below to discover tourist attractions in Gdynia</p>
+                    <a href="#" class="card-link darkgrey">https://bit.ly/3h9vIsC</a>
+                </div>
+
+            </div>
+        </d
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
