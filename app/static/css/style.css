@@ -7,10 +7,6 @@ background-image: linear-gradient(silver, #545454);
  color: #303030;
 }
 
-body {
- font-family: Helvetica, "Helvetica Neue", sans-serif;
-}
-
 .hand {
  font-family: "lucida handwriting", "Courier New", monospace;
 }
@@ -19,7 +15,7 @@ body {
 .outset {
  border-style: outset;
  border-color: dimgrey;
- border-width: 10px;
+ border-width: 5px;
 }
 
 .outset1 {
@@ -27,6 +23,15 @@ body {
  border-color: dimgrey;
  border-width: 15px;
 }
+
+.inset {
+ border-style: inset;
+ border-color: royalblue;
+ border-width: 10px;
+}
+
+.bevel {
+ border-style: be
 
 .font25 {
  font-size: 25px;
@@ -36,7 +41,16 @@ body {
  background-color: #303030;
 }
 
-/*change color of non-active pill*/
+.navbar {
+    font-family:Verdana !important; }
+
+/* Modify brand and text color */
+.navbar-brand
+{
+  font-size: 6em !important;
+}
+
+/*-------------change color of non-active pill---------------------*/
 .nav-pills .pill-2 .nav-link:not(.active) {
  background-color: #282828;
  color: white;
@@ -60,17 +74,12 @@ font-color: #E0E0E0;
 font-size: 25px;
 }
 
-
-
 .font60
 font-size: 60px !important;
 }
 
-.custnav {
- font-size: 60px;
- font-family: "Lucida handwriting", "Courier New", monospace;
- margin-left: 300px !important;
-}
+
+
 .margin{
  margin-left: -350px;
 
@@ -103,24 +112,11 @@ font-size: 60px !important;
   height: auto;
 }
 
-.navbar-brand {
-  font-family: 'Copperplate, Papyrus, fantasy' !important;
-    font-size: xx-large;
-}
-
-.navbar {
-    font-family: 'Copperplate, Papyrus, fantasy' !important;
-}
-
-.nav-link {
-  font-family: 'Copperplate, Papyrus, fantasy' !important;
-    font-size: large;
-}
 .ml-auto {
     margin-left: auto !important;
 }
 
-
-.backgroundgradient {
-    background-image: var(--bs-gradient);
+.color-me {
+    color: greenyello
 }
+
