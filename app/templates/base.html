@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}"/">
+<link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.png') }}">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,14 +19,14 @@
 
 <body>
 
-<!-----------------------------------NAVBAR----------------------------------->
+<!--================================ NAVBAR 1 ====================================!>
 
-<div class>
+<!
 <div class="container">
     <div class="row">
         <header class="mb-3">
-            <!-- As a link -->
-            <nav class="outset navbar navbar-expand-lg navbar-dark bg-dark py-4">
+
+            <nav class="outset navbar navbar-expand-lg navbar-dark bg-dark py-1">
                 <div class="container">
                     <a class="navbar-brand">Technology-IS601</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -55,29 +55,87 @@
                             </li>
                         </ul>
                     </div>
+                </div>
             </nav>
         </header>
     </div>
-    <div class="container">
+    <div class="container"> ---->
+
+
+<div class="container">
+    <nav class="navbar outset mb-3 navbar-expand-lg navbar-default">
+        <div class="container">
+            <a class="navbar-brand" style="color: darkgrey">
+                <img ml-5 src="{{ url_for('static', filename='images/logo1.png') }}" alt="logo" style="margin-right: 30px" style="margin-left: 30px" height="100">
+                <span style="font-size: 35px ">Diana Zawislak</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}"><span style="font-size: 25px ">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}"><span style="font-size: 25px ">About</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <span style="font-size: 25px ">Technology</span></a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page1")}}">GitHub and Git</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page2")}}">Docker and DockerHub</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page3")}}">Python And Flask</a></li>
+                            <li><a class="dropdown-item" href=""{{ url_for('simple_pages.show', page="page4")}}>CI/CD</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="about")}}">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         {% block content %}
         {% endblock %}
     </div>
 </div>
 
 <!-----------------------------------FOOTER----------------------------------->
+ <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-5 mb-1 verylightgrey">&copy; {{ year }} Diana Zawislak / Environment: {{ deployment_environment
+                }}</p>
 
+            <a href="/"
+               class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <img src="/static/images/logo1.png" height="38" width="38">
+                </svg>
+            </a>
+            <ul class="nav col-md-5 justify-content-end verylightgrey">
+                <li class="nav-item"><a href="/" class="nav-link px-2 verylightgrey">Home</a></li>
+                <li class="nav-item"><a href="/page1" class="nav-link px-2 verylightgrey">GitHub</a></li>
+                <li class="nav-item"><a href="/page2" class="nav-link px-2 verylightgrey">Docker</a></li>
+                <li class="nav-item"><a href="/page3" class="nav-link px-2 verylightgrey">Python/Flask</a></li>
+                <li class="nav-item"><a href="/page4" class="nav-link px-2 verylightgrey">CI/CD</a></li>
+                <li class="nav-item"><a href="/about" class="nav-link px-2 verylightgrey">About</a></li>
+            </ul>
     <!-- <footer>
         Environment: {{ deployment_environment }} - Copyright: {{ year }}
         Message: {{ mymessage }} {{ format_price(100) }}
     </footer> -->
 
-</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
-</div>
 
 </body>
 </html>

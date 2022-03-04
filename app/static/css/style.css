@@ -1,15 +1,27 @@
 
 body {
-background-image: linear-gradient(silver, #545454);
+background-image: linear-gradient(darkgray, #555555);
 }
 
 .darkgrey {
  color: #303030;
 }
 
-body {
- font-family: Helvetica, "Helvetica Neue", sans-serif;
+/*------------------------------ Navbar Custom -------------------------------*/
+.navbar-default {
+    background-image: linear-gradient(#333333, #71797E); !important;
 }
+.navbar-default .navbar-nav > li > a {
+    color: silver;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #39ff14;
+}
+.navbar {
+    font-family:Verdana !important; }
+
+/*------------------- Color of links on hover------------------------------------------*/
+a:hover {color: #39ff14 !important;}
 
 .hand {
  font-family: "lucida handwriting", "Courier New", monospace;
@@ -19,7 +31,7 @@ body {
 .outset {
  border-style: outset;
  border-color: dimgrey;
- border-width: 10px;
+ border-width: 5px;
 }
 
 .outset1 {
@@ -28,49 +40,57 @@ body {
  border-width: 15px;
 }
 
+.inset {
+ border-style: inset;
+ border-color: royalblue;
+ border-width: 10px;
+}
+/*----------------------------------Font Sizes-------------------------------*/
 .font25 {
  font-size: 25px;
+}
+.font25
+font-size: 25px;
+}
+.font60
+font-size: 60px !important;
+}
+.font18 {
+font-size: 18px;
 }
 
 .grey {
  background-color: #303030;
 }
 
-/*change color of non-active pill*/
+
+
+/*-------------change color of non-active pill---------------------*/
 .nav-pills .pill-2 .nav-link:not(.active) {
  background-color: #282828;
  color: white;
 }
 
-/*change color of active pill */
+/*------------------change color of active pill --------------------*/
 .nav-pills .pill-1 .nav-link {
  background-color: #101010;
  color: white;
 }
 
-.font18 {
-font-size: 18px;
-}
+
 
 .offwhite {
 font-color: #E0E0E0;
 }
 
-.font25
-font-size: 25px;
+.verylightgrey {
+    color: #9c9c9c;
 }
 
 
 
-.font60
-font-size: 60px !important;
-}
 
-.custnav {
- font-size: 60px;
- font-family: "Lucida handwriting", "Courier New", monospace;
- margin-left: 300px !important;
-}
+
 .margin{
  margin-left: -350px;
 
@@ -103,24 +123,10 @@ font-size: 60px !important;
   height: auto;
 }
 
-.navbar-brand {
-  font-family: 'Copperplate, Papyrus, fantasy' !important;
-    font-size: xx-large;
-}
-
-.navbar {
-    font-family: 'Copperplate, Papyrus, fantasy' !important;
-}
-
-.nav-link {
-  font-family: 'Copperplate, Papyrus, fantasy' !important;
-    font-size: large;
-}
 .ml-auto {
     margin-left: auto !important;
 }
 
 
-.backgroundgradient {
-    background-image: var(--bs-gradient);
-}
+
+

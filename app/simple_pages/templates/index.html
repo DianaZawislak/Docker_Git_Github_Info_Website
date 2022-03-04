@@ -2,21 +2,30 @@
 {% block content %}
 
 <!-----------------------------------Carousel----------------------------------->
-<div>
-    <div class="row mb-5">
+   <div class="container-fluid">
+    <div class="row mb-2">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+             <div>
+
+  </div>
             <div class="carousel-inner">
-                <div class="carousel-item outset1 active">
+                <div class="carousel-item outset active">
+                    <a href="{{ url_for('simple_pages.show', page="page1")}}">
                     <img src="{{ url_for('static', filename='images/GitHub.png') }}" class="d-block w-100" alt="...">
-                </div>
+                    </a></div>
                 <div class="carousel-item outset">
+                    <a href="{{ url_for('simple_pages.show', page="page3")}}">
                     <img src="{{ url_for('static', filename='images/flask.png') }}" class="d-block w-100" alt="...">
+                    </a>
                 </div>
                 <div class="carousel-item outset">
+                    <a href="{{ url_for('simple_pages.show', page="page2")}}">
                     <img src="{{ url_for('static', filename='images/docker.png') }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item outset">
+                    <a href="{{ url_for('simple_pages.show', page="page4")}}">
                     <img src="{{ url_for('static', filename='images/CI-CD.png') }}" class="d-block w-100" alt="...">
+                </a>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -31,12 +40,14 @@
             </button>
         </div>
     </div>
+   </div>
+
 
     <!-----------------------------------CARDS----------------------------------->
 
-</div>
+
     <div class="row mb-5">
-        <div class="col-sm-3">
+        <div class="col-sm-3 d-flex align-items-stretch">
             <div class="card text-white bg-secondary style=width: 12rem;">
                 <div class="card-header">
                     Git an GitHub
@@ -49,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 d-flex align-items-stretch">
             <div class="card text-white bg-secondary style=width: 12rem;">
                 <div class="card-header">
                     Docker and DockerHub
@@ -62,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 d-flex align-items-stretch">
             <div class="card text-white bg-secondary style=width: 12rem;">
                 <div class="card-header">
                     Python and Flask
@@ -76,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3 d-flex align-items-stretch">
             <div class="card text-white bg-secondary style=width: 12rem;">
                 <div class="card-header">
                     CI/CD
@@ -90,10 +101,8 @@
                 </div>
 
             </div>
-        </d
+
             </div>
         </div>
-    </div>
-</div>
 
 {% endblock %}
