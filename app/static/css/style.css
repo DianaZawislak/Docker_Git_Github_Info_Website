@@ -1,6 +1,6 @@
 
 body {
-background-image: linear-gradient(darkgray, darkslategrey);
+background-image: linear-gradient(darkgray, #555555);
 }
 
 .darkgrey {
@@ -17,6 +17,11 @@ background-image: linear-gradient(darkgray, darkslategrey);
 .navbar-default .navbar-nav > li > a:hover {
     color: #39ff14;
 }
+.navbar {
+    font-family:Verdana !important; }
+
+/*------------------- Color of links on hover------------------------------------------*/
+a:hover {color: #39ff14 !important;}
 
 .hand {
  font-family: "lucida handwriting", "Courier New", monospace;
@@ -40,17 +45,25 @@ background-image: linear-gradient(darkgray, darkslategrey);
  border-color: royalblue;
  border-width: 10px;
 }
-
+/*----------------------------------Font Sizes-------------------------------*/
 .font25 {
  font-size: 25px;
+}
+.font25
+font-size: 25px;
+}
+.font60
+font-size: 60px !important;
+}
+.font18 {
+font-size: 18px;
 }
 
 .grey {
  background-color: #303030;
 }
 
-.navbar {
-    font-family:Verdana !important; }
+
 
 /*-------------change color of non-active pill---------------------*/
 .nav-pills .pill-2 .nav-link:not(.active) {
@@ -58,27 +71,23 @@ background-image: linear-gradient(darkgray, darkslategrey);
  color: white;
 }
 
-/*change color of active pill */
+/*------------------change color of active pill --------------------*/
 .nav-pills .pill-1 .nav-link {
  background-color: #101010;
  color: white;
 }
 
-.font18 {
-font-size: 18px;
-}
+
 
 .offwhite {
 font-color: #E0E0E0;
 }
 
-.font25
-font-size: 25px;
+.verylightgrey {
+    color: #9c9c9c;
 }
 
-.font60
-font-size: 60px !important;
-}
+
 
 
 
