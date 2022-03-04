@@ -3,6 +3,7 @@ name: Production Workflow
 on:
   push:
     branches:
+      - 'docker'
       - 'master'
     tags:
       - 'v*'
