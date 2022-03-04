@@ -1,10 +1,21 @@
 
 body {
-background-image: linear-gradient(silver, #545454);
+background-image: linear-gradient(darkgray, darkslategrey);
 }
 
 .darkgrey {
  color: #303030;
+}
+
+/*------------------------------ Navbar Custom -------------------------------*/
+.navbar-default {
+    background-image: linear-gradient(#333333, #71797E); !important;
+}
+.navbar-default .navbar-nav > li > a {
+    color: silver;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #39ff14;
 }
 
 .hand {
@@ -30,9 +41,6 @@ background-image: linear-gradient(silver, #545454);
  border-width: 10px;
 }
 
-.bevel {
- border-style: be
-
 .font25 {
  font-size: 25px;
 }
@@ -43,12 +51,6 @@ background-image: linear-gradient(silver, #545454);
 
 .navbar {
     font-family:Verdana !important; }
-
-/* Modify brand and text color */
-.navbar-brand
-{
-  font-size: 6em !important;
-}
 
 /*-------------change color of non-active pill---------------------*/
 .nav-pills .pill-2 .nav-link:not(.active) {
@@ -116,7 +118,6 @@ font-size: 60px !important;
     margin-left: auto !important;
 }
 
-.color-me {
-    color: greenyello
-}
+
+
 
