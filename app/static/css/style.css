@@ -23,12 +23,10 @@ background-image: linear-gradient(darkgray, #555555);
 .navbar-toggler {
     border: 3px solid #303030 !important;
 }
-.navbar-brand-brand{
-    overflow: hidden;
-  }
 
 /*------------------- Color of links on hover------------------------------------------*/
-a:hover {color: #39ff14 !important;}
+a:hover {color: #39ff14 !important;
+}
 
 .hand {
  font-family: "lucida handwriting", "Courier New", monospace;
