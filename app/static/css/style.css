@@ -110,7 +110,7 @@ font-color: #E0E0E0;
 }
 
 .px-right {
-  padding-left: ($spacer * 5) !important;
+  padding-left:($spacer * 5) !important;
 
 }
 .b {
@@ -130,6 +130,24 @@ font-color: #E0E0E0;
 
 .ml-auto {
     margin-left: auto !important;
+}
+
+ul {
+    list-style-type: square;
+    font-size: 20px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: #7ac9f9;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
 
 

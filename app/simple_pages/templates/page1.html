@@ -1,4 +1,87 @@
 {% extends "base.html" %}
 {% block content %}
-    Git and Github
+    <div class="container-fluid">
+        <img src="{{ url_for('static', filename='images/gitandgithub.png') }}" class="img-fluid" alt="gitandgithub...">
+    </div>
+    <div class="container-fluid py-3"><h4><u>What is Git?</u></h4>
+        <p class="fs-5"><span class="fs-3">G</span>it is a revision control system which arose out of the Linux kernel
+            development community, which had a very
+            specialized need. As thousands of developers spread worldwide, on many different time zones, working on a
+            very
+            complicated project, it was important to be able to coordinate all that work in a rational way and not lose
+            track of
+            what was going on. So, Git was designed for that purpose and it has grown to be used by millions of other
+            projects
+            today, and is the underpinning of most open source software work that's being used on this planet today.</p>
+        <div class="row align-items-start">
+            <div class="col-8">
+                <h4><u>What is GitHub?</u></h4>
+                <p class="fs-5"><span class="fs-3">G</span>itHub is a code hosting platform for version control and
+                    collaboration. It lets you and others work together on
+                    projects from anywhere using repositories, branches, commits, and
+                    pull requests. It is commonly used to host open-source projects. As of November 2021, GitHub
+                    reports having over 73 million developers and more than 200 million repositories
+                    (including at least 28 million public repositories). It is the largest source code host as of
+                    November 2021.</p>
+            </div>
+            <div class="col-4"><img src="{{ url_for('static', filename='images/github1.jpg') }}" class="img-fluid"
+                                    alt="gitandgithub...">
+            </div>
+            <div class="row align-items-start">
+                <div class="col-7">
+                    <h4><u>Main Git/Github Vocabulary</u></h4>
+                    <ul>
+                        <li>Repository - the . git/ folder inside a project, it tracks all changes made to files in
+                            your project, building a history over time. It is your whole project (directories and files)
+                            that you
+                            clone on your computer
+                        </li>
+                        <li>Branch - a version of your repository, or in other words, an independent line of
+                            development, it allows
+                            you to develop features, fix bugs, or safely experiment with new ideas in a contained area
+                            of your
+                            repository
+                        </li>
+                        <li>Merge - a common practice for developers using version control systems. Whether branches are
+                            created for
+                            testing, bug fixes, or other reasons, merging commits changes to another location. To be
+                            more specific,
+                            merging takes the contents of a source branch and integrates them with a target branch. In
+                            this process,
+                            only the target branch is changed. The source branch history remains the same
+                        </li>
+                        <li>Commit - a commit is something that you create, typically by editing files in the working
+                            tree, adding
+                            them to the index, and then saying git commit
+                        </li>
+                        <li>Tag - Tags are ref's that point to specific points in Git history. Tagging is generally used
+                            to capture
+                            a point in history that is used for a marked version release (i.e. v1. 0.1). A tag is like a
+                            branch that
+                            doesn't change
+                        </li>
+                        <li>Pull - used to fetch and download content from a remote repository and immediately update
+                            the local
+                            repository to match that content
+                        </li>
+                        <li>Push - sends the recent commit history from your local repository up to remote repository
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5"><img src="{{ url_for('static', filename='images/branch1.png') }}"
+                                        class="img-fluid"
+                                        alt="branch1">
+                                   <img src="{{ url_for('static', filename='images/gitpage1.jpg') }}"
+                                   class="img-fluid"
+                                   alt="commands">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 {% endblock %}
