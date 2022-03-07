@@ -158,6 +158,15 @@ ul {
   transition: opacity 0.5s;
 }
 
+.card  {
+    background-color: #808080;
+
+}
+.card-body {
+    background-color: #808080;
+
+}
+
 
 
 
