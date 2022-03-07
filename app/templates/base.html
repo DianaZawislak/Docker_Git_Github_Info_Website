@@ -89,7 +89,7 @@
                             <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page1")}}">GitHub and Git</a></li>
                             <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page2")}}">Docker and DockerHub</a></li>
                             <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page3")}}">Python And Flask</a></li>
-                            <li><a class="dropdown-item" href=""{{ url_for('simple_pages.show', page="page4")}}>CI/CD</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page4")}}">CI/CD</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -103,7 +103,6 @@
         {% block content %}
         {% endblock %}
     </div>
-</div>
 
 <!-----------------------------------FOOTER----------------------------------->
  <div class="container">
@@ -139,5 +138,7 @@
         crossorigin="anonymous"></script>
 <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
+</footer>
+ </div>
 </body>
 </html>

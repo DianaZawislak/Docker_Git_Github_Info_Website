@@ -11,48 +11,71 @@
             the docker daemon process running on the host which manages images and containers (also called Docker
             Engine)</p>
 
-                <h4><u>What is a docker container?</u></h4>
-                <p class="fs-5"><span class="fs-3">A</span> container is a runtime instance of a docker image.
-                    a Docker container consists of,
-                    a Docker image,
-                    an execution environment,
-                    a standard set of instructions.
-                    The concept is borrowed from shipping containers, which define a standard to ship goods globally.
-                    Docker defines a standard to ship software.</p>
-            </div>
-     <div class="row align-items-start">
-            <div class="row align-items-start">
-                <div class="col-8">
-                    <h4><u>Common Docker Commands</u></h4>
-                    <ul>
-                        <li><strong>Compose</strong> -
-                            Compose is a tool for defining and running complex applications with Docker. With Compose,
-                            you define a multi-container application in a single file, then spin your application up in
-                            a single command which does everything that needs to be done to get it running.
-                            Also known as : <em>docker compose up</em>
-                        </li>
-                        <li><strong>Run</strong>
-                            – Runs a command in a new container. Also known as : <em>docker start</em>
-                        </li>
-                        <li><strong>Start</strong> – Starts one or more stopped containers. Also known as : <em>docker stop</em>
+        <h4><u>What is a docker container?</u></h4>
+        <p class="fs-5"><span class="fs-3">A</span> container is a runtime instance of a docker image.
+            a Docker container consists of,
+            a Docker image,
+            an execution environment,
+            a standard set of instructions.
+            The concept is borrowed from shipping containers, which define a standard to ship goods globally.
+            Docker defines a standard to ship software.</p>
+    </div>
+    <div class="row align-items-start">
+        <div class="col-8">
+            <h4><u>Common Docker Commands</u></h4>
+            <ul>
+                <li><strong>Compose</strong> -
+                    Compose is a tool for defining and running complex applications with Docker. With Compose,
+                    you define a multi-container application in a single file, then spin your application up in
+                    a single command which does everything that needs to be done to get it running.
+                    Also known as : <em>docker compose up</em>
+                </li>
+                <li><strong>Run</strong>
+                    – Runs a command in a new container. Also known as : <em>docker start</em>
+                </li>
+                <li><strong>Start</strong> – Starts one or more stopped containers. Also known as : <em>docker stop</em>
 
-                        </li>
-                        <li><strong>Stop</strong> – Stops one or more running containers. Also known as : <em>docker build</em>
-                        </li>
-                        <li><strong>Build</strong> – Builds an image form a Docker file. Also known as : <em>docker build</em>
-                        </li>
-                        <li><strong>Pull</strong> – Pulls an image or a repository from a registry. Also known as :
-                            <em>docker pull</em>
-                        </li>
-                    </ul>
+                </li>
+                <li><strong>Stop</strong> – Stops one or more running containers. Also known as : <em>docker build</em>
+                </li>
+                <li><strong>Build</strong> – Builds an image form a Docker file. Also known as : <em>docker build</em>
+                </li>
+                <li><strong>Pull</strong> – Pulls an image or a repository from a registry. Also known as :
+                    <em>docker pull</em>
+                </li>
+            </ul>
+        </div>
+        <div class="col-4"><img src="{{ url_for('static', filename='images/container.png') }}"
+                                class="img-fluid"
+                                alt="container">
+            <img src="{{ url_for('static', filename='images/docker3.png') }}"
+                 class="img-fluid"
+                 alt="docker3">
+        </div>
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div class="col-5">
+                    <h4><u>How to start docker container?</u></h4>
+                    <p class="fs-5"><span class="fs-3">H</span>ere is the link to pull container to run this website
+                        locally.
+                        <a href="https://hub.docker.com/r/dianazawislak/zawislak-project1-prod">PROJECT
+                            1-IS601-ZAWISLAK</a>
+                        Image can be pulled from command line using command <br><em>docker pull
+                            dianazawislak/zawislak-project1-prod:master\</em></p>
+
+                    <p class="fs-5">After image is pulled one should navigate to a folder containing image and from
+                        there it can be started using command <em>docker compose up --build</em>
+                    </p>
+                    <p class="fs-5">When procces completes, simply go to browser and open http://localhost:80</p>
+
                 </div>
-                <div class="col-4"><img src="{{ url_for('static', filename='images/container.png') }}"
-                                   class="img-fluid"
-                                   alt="container">
-                                   <img src="{{ url_for('static', filename='images/docker3.png') }}"
-                                   class="img-fluid"
-                                   alt="docker3">
+
+                <div class="col-7"><img src="{{ url_for('static', filename='images/composeup.jpg') }}"
+                                        class="img-fluid"
+                                        alt="composeup">
                 </div>
+
+
             </div>
         </div>
     </div>

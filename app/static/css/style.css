@@ -24,8 +24,16 @@ background-image: linear-gradient(to bottom right, #808080, #f2f3f4);
     border: 3px solid #303030 !important;
 }
 
-/*------------------- Color of links on hover------------------------------------------*/
-a:hover {color: #39ff14 !important;
+.dropdown-menu {
+    background-color: #9c9c9c;
+}
+
+/*------------------- Color of links------------------------------------------*/
+a:hover {
+    color: #39ff14 !important;
+}
+a {
+    color: darkslategrey;
 }
 
 .hand {
@@ -148,6 +156,15 @@ ul {
   cursor: pointer;
   opacity: 100%;
   transition: opacity 0.5s;
+}
+
+.card  {
+    background-color: #808080;
+
+}
+.card-body {
+    background-color: #808080;
+
 }
 
 

@@ -1,4 +1,97 @@
 {% extends "base.html" %}
 {% block content %}
-    Python and Flask
+    <div class="container-fluid">
+        <img src="{{ url_for('static', filename='images/flask_python.png') }}" class="img-fluid" alt="flask_python">
+    </div>
+    <div class="container-fluid py-3"><h4><u>What is Pytest?</u></h4>
+        <p class="fs-5"><span class="fs-3">P</span>yTest is a testing framework that allows users to write test codes
+            using Python programming language. It helps you to write simple and scalable test cases for databases, APIs,
+            or UI. PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit tests to
+            complex functional tests.
+            <br>Here is a link to git file containing pytest of pages of this Website
+            <a href="https://github.com/DianaZawislak/Docker_Git_Github_Info_Website/blob/master/tests/simple_pages_test.py">PYTEST
+                OF PAGES OF THIS WEBSITE</a>
+        </p>
+        <div class="row align-items-start">
+            <div class="col-sm-4 d-flex align-items-stretch">
+                <p class="fs-5">Pytest in repository of this Website can be performed from pycharm terminal by typing
+                    <em>pytest</em> command.
+                    Each section on the test can also b individually ran directly in file editing window.
+                    In this case Pytesy will also be performed each time new content is pushed to repository per
+                    worklflow.
+
+                    <br>Following this link you can see all tests included in this repository <a
+                            href="https://github.com/DianaZawislak/Docker_Git_Github_Info_Website/tree/master/tests">THIS
+                        WEBSITE'S TESTS</a></p>
+            </div>
+            <div class="col-sm-8 d-flex align-items-stretch">
+                <div class="card text-white bg-light overflow-auto" style="height: 20rem;">
+                    <div class="card-body">
+                        <div class="card text-dark">
+                            <h5 class="card-title">Pytest Results</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Simple Pages, Calculator, Context Process</h6>
+                            <img src="{{ url_for('static', filename='images/pytestresult.jpg') }}" class="card-img-top"
+                                 alt="test">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4><u>What is Flask></u></h4>
+        <p class="fs-5"><strong><span class="fs-3">F</span>lask</strong> is a lightweight web application framework
+            designed to make getting
+            started quick and easy." It is a Python module, which means that the entire framework is written in Python
+            code.
+            The repository for this application is hosted on GitHub here. Additionally, here are the Heroku links for
+            the
+            Production and Development Environments for this application.</p>
+
+
+        <div class="row align-items">
+            <div class="col-6">
+                <p class="fs-5"><strong><span class="fs-3">F</span>lask Blueprints</strong> encapsulate functionality
+                    for the web app, such as views and templates. It is a very helpful
+                    way to organize and work with an application. For this application, I utilize Flask Blueprints for
+                    the bundle of
+                    controllers that handle routes within the app itself. As you can see in the image to the right, this
+                    application
+                    uses Flask to import a Blueprint template that is then used to make the bundle of controllers that
+                    allow for
+                    correct routing between pages.</p>
+
+                <p class="fs-5"><strong><span class="fs-3">S</span>imple Pages</strong> is a bundle of controllers made
+                    from a Flask Blueprint. With Simple Pages, I was able ability
+                    to make template folders that then "speak to one another" efficiently. For this app, we utilize this
+                    method to
+                    have all the html pages of the site return and route correctly by having a parent "base.html" file
+                    living within
+                    the root of the app. Any of the internal pages will return correctly in this manner without having
+                    to add
+                    additional code.</p>
+            </div>
+                <div class="col-6">
+                    <img src="{{ url_for('static', filename='images/flask1.jpg') }}" class="img-fluid" alt="flask1">
+                </div>
+            </div>
+    <div class="row align-items">
+            <div class="col-6">
+                 <img src="{{ url_for('static', filename='images/outline1.jpg') }}" class="img-fluid" alt="outline1">
+                </div>
+
+                <div class="col-6">
+                    <div class="card text-white bg-light overflow-auto" style="height: 61rem;">
+                    <div class="card-body">
+                        <div class="card text-dark">
+                            <h5 class="card-title">Project Outline</h5>
+                            <img src="{{ url_for('static', filename='images/outline.jpg') }}" class="card-img-top"
+                                 alt="test">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
 {% endblock %}
