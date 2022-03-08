@@ -62,10 +62,11 @@ a {
 .font25 {
  font-size: 25px;
 }
-.font25
+.font25{
+
 font-size: 25px;
 }
-.font60
+.font60{
 font-size: 60px !important;
 }
 .font18 {

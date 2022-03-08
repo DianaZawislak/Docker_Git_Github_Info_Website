@@ -1,6 +1,125 @@
 {% extends "base.html" %}
 {% block content %}
-<img src="{{ url_for('static', filename='images/cicd-pipeline.jpg') }}"
-                                class="img-fluid"
-                                alt="container">
+    <div class="container-fluid mb-4">
+        <img src="{{ url_for('static', filename='images/cicd-pipeline.jpg') }}"
+             class="img-fluid" alt="container">
+    </div>
+    <div class="container-fluid">
+        <blockquote class="blockquote">
+            <p class="mb-3"><em><strong>"Continuous Integration</strong> is a software development practice where
+                members of
+                a team integrate
+                their work frequently, usually each person integrates at least daily - leading to multiple integrations
+                per day. Each integration is verified by an automated build (including test) to detect integration
+                errors as quickly as possible. Many teams find that this approach leads to significantly reduced
+                integration problems and allows a team to develop cohesive software more rapidly."</em></p>
+            <footer class="blockquote-footer">Martin Fowler</footer>
+        </blockquote>
+    </div>
+    <div class="row align-items stretch">
+
+        <div class="col-6 py-3">
+            <h4><u>How my project works?</u></h4>
+            <p class="fs-5"> This particular project uses two workflows to assure continuous integration and
+                continuous delivery. It is production workflow and development workflow. Technically both are set up to
+                do the same final thing,
+                deploy the app. The difference is that one deploys to production and one to development. Before
+                production can be updated, development must be checked, tested and merged. That is what triggers
+                main app to update. Main app will update once new image is pushed to DockerHub for that to happen, merge
+                has to be
+                complete and all tests passed. DockerHub will receive new image via GitHub actions in workflow file and
+                will push it to production to update main application.</p>
+            <h4 class="mt-5"><u>Steps to set up the project?</u></h4>
+            <ul class="list-unstyled">
+                <li>
+                    1. Create a new GitHub repository
+                </li>
+                <li>
+                    2. Create a new Docker repository in Dockerhub
+                </li>
+                <li>
+                    3. Create Heroku production app
+                </li>
+                <li>
+                    4. Create Heroku Development app
+                </li>
+                <li>
+                    5. Create API key within Heroku
+                </li>
+                <li>
+                    6. Add “secrets” to the GitHub
+                </li>
+                <li>
+                    7. Update info in prod.yml and dev.yml workflow files
+                </li>
+            </ul>
+            <h4 class="mt-5"><u>What to do next?</u></h4>
+            <ul class="list-unstyled">
+                <li>
+                    1. Clone repository or create your own project in PyCharm
+                </li>
+                <li>
+                    2. Make changes in new branch, commit
+                </li>
+                <li>
+                    3. Add remote repository that leads to your newly created repository
+                </li>
+                <li>
+                    4. Push your project to your new repo, comment on changes you made
+                </li>
+                <li>
+                    5. Create pull request to merge your changes to main branch
+                </li>
+                <li>
+                    6. Sit back and watch the process take off, first development will run
+                </li>
+                <li> tests, if everything passes
+                    the production will take over and build a new
+                </li>
+                <li> image for docker which will carry on to Heroku.
+                </li>
+            </ul>
+            <iframe src="https://giphy.com/embed/5Zesu5VPNGJlm" width="480" height="270"
+                    class="giphy-embed" ></iframe>
+
+        </div>
+
+
+        <div class="col-6 mt-3">
+            <img src="{{ url_for('static', filename='images/prodwork.png') }}" class="img-fluid" alt="prodwork">
+            <img src="{{ url_for('static', filename='images/workflows.png') }}" class="img-fluid py-2" alt="workflow">
+            <img src="{{ url_for('static', filename='images/workflows1.png') }}" class="img-fluid py-2" alt="workflow1">
+        </div>
+
+    </div>
+    <div class="col-5 py-2">
+
+
+    </div>
+
+    <blockquote class="blockquote">
+        <ul class="list-unstyled mb-3">
+            <li><em>"You achieve <strong>continuous delivery</strong> by continuously integrating the
+                software
+                done by the development team,
+                building executables, and running automated tests on those executables to detect problems.
+                Furthermore you
+                push the executables into increasingly production-like environments to ensure the software
+                will
+                work in
+                production. To do this you use a DeploymentPipeline.</em></li>
+            <li></li>
+            <li><em>The key test is that a business sponsor could request that the current development
+                version
+                of the software
+                can be deployed into production at a moment's notice - and nobody would bat an eyelid, let
+                alone
+                panic."</em></li>
+        </ul>
+        <footer class="blockquote-footer">Martin Fowler</footer>
+    </blockquote>
+
+
+    </div>
+    </div>
 {% endblock %}
