@@ -65,9 +65,8 @@
 <div class="container">
     <nav class="navbar outset mb-3 navbar-expand-md navbar-light navbar-default">
         <div class="container">
-            <a class="navbar-brand" style="color: darkgrey">
-                <img ml-5 src="{{ url_for('static', filename='images/logo1.png') }}" alt="logo1" style="margin-right: 30px" style="margin-left: 30px" height="100">
-                <span style="font-size: 20px ">Diana Zawislak</span></a>
+            <a class="navbar-brand hidden-xs" style="color: darkgrey">
+                <img ml-5 src="{{ url_for('static', filename='images/logo1.png') }}" alt="logo1" style="margin-right: 30px" style="margin-left: 30px" height="100">Diana Zawislak</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -76,15 +75,15 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}"><span style="font-size: 20px ">Home</span></a>
+                        <a class="nav-link" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}"><span style="font-size: 20px ">About</span></a>
+                        <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <span style="font-size: 20px ">Technology</span></a>
+                            Technology</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page1")}}">GitHub and Git</a></li>
                             <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page2")}}">Docker and DockerHub</a></li>
