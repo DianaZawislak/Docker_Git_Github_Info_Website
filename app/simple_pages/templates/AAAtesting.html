@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-    <div class="container-fluid">
+
         <img src="{{ url_for('static', filename='images/aaa2.png') }}" class="img-fluid" alt="gitandgithub...">
-    </div>
+
     <div class="container-fluid py-3"><h4><u>What is AAA testing?</u></h4>️ ️
         <p class="fs-5"><span class="fs-3">T</span>he AAA pattern is a pattern for structuring tests. It breaks each
             test down into three parts – Arrange, Act, and Assert – where each part is a step leading to the next. The
@@ -11,6 +11,8 @@
 
             In other words, each step in the pattern is a function whose return value is the input of the following
             step.</p>
+        <div class="row align items">
+        <div class="col-8">
         <h5>Arrange</h5>
         <p class="fs-5">The block of code that sets up the conditions for the test action.</p>
         <p class="fs-5"><u>Guidelines</u>
@@ -21,8 +23,14 @@
                 function and tested in its own right.
             </li>
             <li>Only prepare non-deterministic results not available after action.</li>
-        </ul>
-        </p>
+        </ul></div>
+        <div class="col-4"><img src="{{ url_for('static', filename='images/aaa1.png') }}" class="img-fluid"
+                                    alt="aaa1"></div>
+
+        </div>
+    </div>
+<div class="row align-items">
+<div class="col-6 mb-5">
         <h5>Act</h5>
         <p class="fs-5">The line of code where the Action is taken on the SUT.</p>
         <p class="fs-5"><u>Guidelines</u>
@@ -44,8 +52,7 @@
                 two lines surrounded by empty lines.
             </li>
         </ul>
-        </p>
-        </p>
+
         <h5>Assert</h5>
         <p class="fs-5">The block of code that performs the assertions on the state of the SUT after the action.</p>
         <p class="fs-5"><u>Guidelines</u>
@@ -63,13 +70,14 @@
                 information from the SUT and perform assertions on it, then consider extracting an assertion helper.
             </li>
         </ul>
-        </p>
-
     </div>
-    <!--content-->
+<div class="col-6"><img src="{{ url_for('static', filename='images/aaa.JPG') }}" class="img-fluid mt-5 mb-4"
+                        alt="aaa"><p class="fs-6"><em>This image shows how testing for add_method is broken down to show Arrange, Act and Assert</em></p></div>
+    </div>
+
+<div>
     <p>Resources:
     <li>https://developers.mews.com/aaa-pattern-a-functional-approach/</li>
     <li>https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html</li>
-    </p>
-    </ul>
+   </div>
 {% endblock %}
