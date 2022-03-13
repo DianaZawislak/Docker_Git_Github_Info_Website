@@ -1,6 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
+    <div class="container-fluid">
+        <img src="{{ url_for('static', filename='images/aaa2.png') }}" class="img-fluid" alt="gitandgithub...">
+    </div>
+    <div class="container-fluid py-3"><h4><u>What is AAA testing?</u></h4>️ ️
+        <p class="fs-5"><span class="fs-3">T</span>he AAA pattern is a pattern for structuring tests. It breaks each
+            test down into three parts – Arrange, Act, and Assert – where each part is a step leading to the next. The
+            arrange step sets up the test’s input values. The act step prompts the primary function being tested. And
+            finally, the assert step verifies that the output of the function is what was expected.
 
-<!--content-->
+            In other words, each step in the pattern is a function whose return value is the input of the following
+            step.</p>
+        <h5>Arrange</h5>
+        <p class="fs-5">The block of code that sets up the conditions for the test action.</p>
+        <p class="fs-5"><u>Guidelines</u>
+        <ul>
+            <li>Use a single block of code with no empty lines.</li>
+            <li>Do not use assert in the Arrange block. If you need to make an assertion about your arrangement, then
+                this is a smell that your arrangement is too complicated and should be extracted to a fixture or setup
+                function and tested in its own right.
+            </li>
+            <li>Only prepare non-deterministic results not available after action.</li>
+        </ul>
+        </p>
+        <h5>Act</h5>
+        <p class="fs-5">The line of code where the Action is taken on the SUT.</p>
+        <p class="fs-5"><u>Guidelines</u>
+        <ul>
+            <li>Start every Action line with result =.
 
+                This makes it easier to distinguish test actions and means you can avoid the hardest job in programming:
+                naming. When every result is called result, then you do not need to waste brain power wondering if it
+                should be item = or response = etc. An added benefit is that you can find test actions easily with a
+                tool like grep.
+            </li>
+            <li>Even when there is no result from the action, capture it with result = and then assert result is None.
+                In this way, the SUT’s behaviour is pinned.
+            </li>
+            <li>If you struggle to write a single line action, then consider extracting some of that code into your
+                arrangement.
+            </li>
+            <li>The action can be wrapped in with ... raises for expected exceptions. In this case your action will be
+                two lines surrounded by empty lines.
+            </li>
+        </ul>
+        </p>
+        </p>
+        <h5>Assert</h5>
+        <p class="fs-5">The block of code that performs the assertions on the state of the SUT after the action.</p>
+        <p class="fs-5"><u>Guidelines</u>
+        <ul>
+            <li>Use a single block of code with no empty lines.
+
+
+            </li>
+            <li>First test result, then side effects.
+            </li>
+            <li>Limit the actions that you make in this block. Ideally, no actions should happen, but that is not always
+                possible.
+            </li>
+            <li>Use simple blocks of assertions. If you find that you are repeatedly writing the same code to extract
+                information from the SUT and perform assertions on it, then consider extracting an assertion helper.
+            </li>
+        </ul>
+        </p>
+
+    </div>
+    <!--content-->
+    <p>Resources:
+    <li>https://developers.mews.com/aaa-pattern-a-functional-approach/</li>
+    <li>https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html</li>
+    </p>
+    </ul>
 {% endblock %}
