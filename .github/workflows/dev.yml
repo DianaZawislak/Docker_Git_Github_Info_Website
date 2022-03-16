@@ -5,6 +5,7 @@ on:
     branches:
       - 'master'
       - 'main'
+      - 'project2'
 
 jobs:
   run_pytest:
