@@ -1,6 +1,201 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!--content-->
+    <img src="{{ url_for('static', filename='images/oop.png') }}" class="img-fluid" alt="oop">
+    <div class="container-fluid py-3">
+        <div class="row align-items">
+            <div class="col-7">
 
+                <ul>
+                    <li><h4><u>Encapsulation</u></h4>
+                        The ability to "hide" the implementation and the data stored in an object. This
+                        protects programs from the "side-effects" of unwanted changes. The Input-Process-Output (IPO)
+                        chart is a good example of encapsulation. The Input and Output represent the interface but the
+                        process itself and any variables (other than the Input and Output variables) are considered to
+                        be local. Local variables altered in the process are separate from local variables in another
+                        process, even though they may share the same name . Since variables are declared in the Data
+                        Division of a COBOL program, they are global (not local) and are available to all paragraphs in
+                        the program. This makes variables in a program susceptible to alteration in a paragraph where
+                        they are not intended to be.
+
+                    </li>
+                    <li><h4><u>Inheritance</u></h4>
+
+                        The ability to "add on" to a class, additional components and/or to "override"
+                        certain components of the class we are inheriting from to create a more specific model. Suppose
+                        we created a person class. The person could be refined to be a student by adding student
+                        characteristics and functions. Since a person may be defined to have a name, address, age, etc.,
+                        we could now say that a student is a person who attends a school, has a GPA, major etc.
+
+                        Java Implementation: When a java class is defined with the extends classname clause. This
+                        indicates that we wish to add more variables or methods to make this class more specific to our
+                        needs without rewriting all of the extended class's variables and methods. If methods need to be
+                        changed in the inheriting class we may override the methods. In order to override and existing
+                        method it must have the same method name, return type, and the same number of parameters, in the
+                        same order and same type as the original method.
+                    </li>
+                    <li><h4><u>Polymorphism</u></h4>
+
+                        Literally "many forms", this powerful feature allows us to have the same method take
+                        on different meanings depending on which class is instantiated. An example might be an abstract
+                        idea called a shape. The shape could have two characteristics: area and perimeter. There could
+                        be two type of shapes (inherited) called circle and square. We would indicate in the shape
+                        class, that there are two values to be determined, area and perimeter. The first determining a
+                        value indicating the number of square inches and the other inches. Since I don't know what shape
+                        it is I cannot tell you the equation for the area or the perimeter. I will leave those details
+                        out. When I create a class of circles, I do know how to calculate the area and perimeter of a
+                        circle and can now provide these details to the appropriate functions. The same goes when I
+                        create a class of squares. Since both circles and squares are inherited from shapes they are
+                        considered part of the shapes class and can be thought of as such. When I ask for the area of a
+                        shape, through polymorphism, the type of shape will be determined and the correct area
+                        calculated. Polymorphism has two implementations: inherited polymorphism, which occurs through
+                        inheritance and overriding; ad hoc polymorphism, which occurs between multiple class structures.
+
+                    </li>
+                    <li><h4><u>Abstarction</u></h4>
+
+                        The ability to represent a complex reality in terms of a simplified model.
+                        Abstraction is not limited to OOP. It is used in procedural languages in top down step-wise
+                        refinement and through the use of subprograms, functions, etc. An example of an abstraction is
+                        the MOVE command in COBOL. While the MOVE may seem like a concrete statement, it truly is
+                        abstract. By MOVEing A-VAR to B-VAR, COBOL is required to do all of the editing, alignment, and
+                        error checking to be sure it is legal and to handle fields of dissimilar lengths and types.
+                    </li>
+                    <li><h4><u>Instantiation</u></h4>
+                        Instantiating a class is creating a copy of the class which inherits all class variables and
+                        methods. Instantiating a class in Python is simple. To instantiate a class, we simply call the
+                        class as if it were a function, passing the arguments that the __init__ method defines. The
+                        return value will be the newly created object.
+                    </li>
+                    <li><h4><u>Object</u></h4>An Object is an instance of a Class. A class is like a blueprint while an
+                        instance is a copy of
+                        the class with actual values. Python is object-oriented programming language that stresses on
+                        objects i.e. it mainly emphasizes functions. Objects are basically an encapsulation of data
+                        variables and methods acting on that data into a single entity.
+                        For a better understanding of the concept of objects consider an example, many of you have
+                        played CLASH OF CLANS, So let’s assume base layout as the class which contains all the
+                        buildings, defenses, resources, etc. Based on these descriptions we make a village, here the
+                        village is the object.
+
+                        Syntax:
+
+                        obj = MyClass()
+                        print(obj.x)
+                    </li>
+                    <li><h4><u>Class</u></h4>A class is a user-defined blueprint or prototype from which objects are
+                        created. Classes provide
+                        a means of bundling data and functionality together. Creating a new class creates a new type of
+                        object, allowing new instances of that type to be made. Each class instance can have attributes
+                        attached to it for maintaining its state. Class instances can also have methods (defined by
+                        their class) for modifying their state.
+
+                        To understand the need for creating a class let’s consider an example, let’s say you wanted to
+                        track the number of dogs that may have different attributes like breed, age. If a list is used,
+                        the first element could be the dog’s breed while the second element could represent its age.
+                        Let’s suppose there are 100 different dogs, then how would you know which element is supposed to
+                        be which? What if you wanted to add other properties to these dogs? This lacks organization and
+                        it’s the exact need for classes.
+
+                        Class creates a user-defined data structure, which holds its own data members and member
+                        functions, which can be accessed and used by creating an instance of that class. A class is like
+                        a blueprint for an object.
+
+                        Some points on Python class:
+
+                        <ul style="font-size: smaller">
+                            <li>Classes are created by keyword class.</li>
+                            <li>Attributes are the variables that belong to a class.</li>
+                            <li>Attributes are always public and can be accessed using the dot (.)</li>
+                        </ul>
+                    </li>
+                    <li><h4><u>Namespace</u></h4>A namespace is a system that has a unique name for each and every
+                        object in Python. An object
+                        might be a variable or a method. Python itself maintains a namespace in the form of a Python
+                        dictionary. Let’s go through an example, a directory-file system structure in computers.
+                        Needless to say, that one can have multiple directories having a file with the same name inside
+                        every directory. But one can get directed to the file, one wishes, just by specifying the
+                        absolute path to the file.
+                        On similar lines, the Python interpreter understands what exact method or variable one is trying
+                        to point to in the code, depending upon the namespace. So, the division of the word itself gives
+                        a little more information. Its Name (which means name, a unique identifier) + Space(which talks
+                        something related to scope). Here, a name might be of any Python method or variable and space
+                        depends upon the location from where is trying to access a variable or a method.
+                        Types of namespaces :
+
+                        When Python interpreter runs solely without any user-defined modules, methods, classes, etc.
+                        Some functions like print(), id() are always present, these are built-in namespaces. When a user
+                        creates a module, a global namespace gets created, later the creation of local functions creates
+                        the local namespace. The built-in namespace encompasses the global namespace and the global
+                        namespace encompasses the local namespace.
+                        The lifetime of a namespace :
+
+                        A lifetime of a namespace depends upon the scope of objects, if the scope of an object ends, the
+                        lifetime of that namespace comes to an end. Hence, it is not possible to access the inner
+                        namespace’s objects from an outer namespace.
+
+                    </li>
+                    <li><h4><u>Constructor</u></h4>
+                        A constructor is a special type of method (function) which is used to initialize the instance
+                        members of the class.
+                        Constructor definition is executed when we create the object of this class. Constructors also
+                        verify that there are enough resources for the object to perform any start-up task.
+
+
+                        Constructors can be of two types.
+                        <ul style="font-size: smaller">
+                            <li>Parameterized Constructor</li>
+                            <li>Non-parameterized Constructor</li>
+                        </ul>
+                    <li><h4><u>Fixtures</u></h4>
+                    In testing, a fixture provides a defined, reliable and consistent
+                        context for the tests. This
+                        could include environment (for example a database configured with known parameters) or content
+                        (such as a dataset).
+
+                        Fixtures define the steps and data that constitute the arrange phase of a test (see Anatomy of a
+                        test). In pytest, they are functions you define that serve this purpose. They can also be used
+                        to define a test’s act phase; this is a powerful technique for designing more complex tests.
+
+                        The services, state, or other operating environments set up by fixtures are accessed by test
+                        functions through arguments. For each fixture used by a test function there is typically a
+                        parameter (named after the fixture) in the test function’s definition.
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+            </li>
+            </ul>
+        </div>
+
+        <div>
+            <p style="font-size: small">Resources:
+            <ul style="font-size: small">
+                <li>https://www.unf.edu/~broggio/cop3540/OOPTerms.htm</li>
+                <li>
+                    https://www.tutorialspoint.com/Explain-Inheritance-vs-Instantiation-for-Python-classes#:~:text=Instantiating%20a%20class%20is%20creating,__init__%20method%20defines.
+                </li>
+                <li>https://www.geeksforgeeks.org/python-object/</li>
+                <li>https://www.javatpoint.com/python-constructors</li>
+                <li>
+                    https://docs.pytest.org/en/7.0.x/explanation/fixtures.html#:~:text=Fixtures%20define%20the%20steps%20and,for%20designing%20more%20complex%20tests.
+                </li>
+                <li>Unit testing is a technique in which particular module is tested to check by developer himself
+                    whether there are any errors. The primary focus of unit testing is test an individual unit of system
+                    to analyze, detect, and fix the errors.
+
+                    Python provides the unittest module to test the unit of source code. The unittest plays an essential
+                    role when we are writing the huge code, and it provides the facility to check whether the output is
+                    correct or not.
+
+                    Normally, we print the value and match it with the reference output or check the output manually.
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
 {% endblock %}
