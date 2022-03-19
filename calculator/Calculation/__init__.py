@@ -57,6 +57,7 @@ class Subtraction(Calculation):
             difference_of_values = Sub.subtract(difference_of_values, value)
         return difference_of_values
 
+
 class Division(Calculation):
     """Division calculation object"""
 
@@ -66,4 +67,3 @@ class Division(Calculation):
         for value in self.values:
             result = Div.divide(result, value)
         return result
-
