@@ -14,7 +14,6 @@ class Addition:
         pass
 
 
-
 class Subtraction:
     """ This is the subtraction class"""
 
@@ -28,7 +27,6 @@ class Subtraction:
         pass
 
 
-
 class Multiplication:
     """ This is the multiplication class"""
 
@@ -40,7 +38,6 @@ class Multiplication:
     @classmethod
     def create(cls, create, values):
         pass
-
 
 
 class Division:
