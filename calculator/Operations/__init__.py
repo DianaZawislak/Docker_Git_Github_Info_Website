@@ -26,6 +26,10 @@ class Subtraction:
     def create(cls, create, values):
         pass
 
+    @classmethod
+    def Sub(cls, param, param1):
+        pass
+
 
 class Multiplication:
     """ This is the multiplication class"""

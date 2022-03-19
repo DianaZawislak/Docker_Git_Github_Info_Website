@@ -51,4 +51,5 @@ def test_calculator_division_exception():
     # Act
     with pytest.raises(ZeroDivisionError):
         Calculator.divide_numbers(value_a, value_b)
-    assert result is True
+        # Assert
+        assert result is True

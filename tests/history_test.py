@@ -7,8 +7,10 @@ from calculator.Calculation import Addition
 @pytest.fixture
 def clear_history_fixture():
     """define a function that will run each time you pass it to a test, it is called a fixture"""
-    # pylint: disable=redefined-outer-name
-    History.clear_history()
+
+
+# pylint: disable=redefined-outer-name
+History.clear_history()
 
 
 @pytest.fixture
