@@ -43,8 +43,9 @@ def test_calculator_divide_method():
 def test_calculator_division_exception():
     """ Testing division exception for division by zero"""
     # Arrange
-    value_1 = 1
-    value_2 = 0
+    tuple_list = (1.0, 0.0)
     # Act
     with pytest.raises(ZeroDivisionError):
-        Calculator.divide_numbers(value_1, value_2)
+        result = Calculator.divide(tuple_list)
+    # Assert
+        assert result is True
