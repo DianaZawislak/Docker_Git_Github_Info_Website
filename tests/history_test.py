@@ -58,25 +58,25 @@ def test_add_calculation_to_history(clear_history_fixture, setup_addition_calcul
 def test_subtraction_calculation_to_history(clear_history_fixture, setup_subtraction_calculation_fixture):
     """Testing adding subtraction calculations to history"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
-    assert History.count_history() == 1
+    assert History.count_history() == 2
 
 
 def test_multiplication_calculation_to_history(clear_history_fixture, setup_multiplication_calculation_fixture):
     """Testing adding multiplication calculations to history"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
-    assert History.count_history() == 1
+    assert History.count_history() == 3
 
 
 def test_division_calculation_to_history(clear_history_fixture, setup_division_calculation_fixture):
     """Testing adding division calculations to history"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
-    assert History.count_history() == 1
+    assert History.count_history() == 4
 
 
 def test_clear_calculation_history(clear_history_fixture, setup_addition_calculation_fixture):
     """Testing clear history returns true for success"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
-    assert History.count_history() == 1
+    assert History.count_history() == 5
     History.clear_history()
     assert History.count_history() == 0
     assert History.clear_history() == True
@@ -103,7 +103,7 @@ def test_get_calculation_first(clear_history_fixture, setup_addition_calculation
 def test_history_count(clear_history_fixture, setup_addition_calculation_fixture):
     """Testing getting the count of calculations from the history"""
     # pylint: disable=unused-argument,redefined-outer-name
-    assert History.count_history() == 1
+    assert History.count_history() == 4
 
 
 def test_get_calc_last_result_object(clear_history_fixture, setup_addition_calculation_fixture):
