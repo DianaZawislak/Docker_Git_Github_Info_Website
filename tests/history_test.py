@@ -21,6 +21,7 @@ def setup_addition_calculation_fixture():
     addition = Addition(values)
     History.add_calculation(addition)
 
+
 @pytest.fixture
 def setup_subtraction_calculation_fixture():
     """subtraction fixture"""
@@ -49,7 +50,25 @@ def setup_division_calculation_fixture():
 
 
 def test_add_calculation_to_history(clear_history_fixture, setup_addition_calculation_fixture):
-    """Testing clear history returns true for success"""
+    """Testing adding addition calculations to history"""
+    # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
+    assert History.count_history() == 1
+
+
+def test_subtraction_calculation_to_history(clear_history_fixture, setup_subtraction_calculation_fixture):
+    """Testing adding subtraction calculations to history"""
+    # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
+    assert History.count_history() == 1
+
+
+def test_multiplication_calculation_to_history(clear_history_fixture, setup_multiplication_calculation_fixture):
+    """Testing adding multiplication calculations to history"""
+    # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
+    assert History.count_history() == 1
+
+
+def test_division_calculation_to_history(clear_history_fixture, setup_division_calculation_fixture):
+    """Testing adding division calculations to history"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
     assert History.count_history() == 1
 
