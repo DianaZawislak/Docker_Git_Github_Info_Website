@@ -52,7 +52,7 @@ class Subtraction(Calculation):
 
     def get_result(self):
         """get the subtraction results"""
-        difference_of_values = 4.0
+        difference_of_values = 2.0
         for value in self.values:
             difference_of_values = Sub.subtract(difference_of_values, value)
         return difference_of_values
@@ -63,7 +63,7 @@ class Division(Calculation):
 
     def get_result(self):
         """get the division results"""
-        result = 4.0
+        result = 1.0
         for value in self.values:
             result = Div.divide(result, value)
         return result

@@ -4,70 +4,80 @@ from calculator.Calculation import Addition, Subtraction, Multiplication, Divisi
 import pytest
 
 
-def test_calculation_multiplication_instance():
-    """Testing the Calculator Subtract"""
-    # ARRANGE
-    tuple_list = (2, 4)
-    # ACT
-    calculation = Multiplication.create(tuple_list)
-    # ASSERT
-    assert isinstance(calculation, Multiplication)
-
-
-def test_calculation_subtraction_instance():
-    """Testing the Calculator Subtract"""
-    # ARRANGE
-    tuple_list = (2, 4)
-    # ACT
-    calculation = Subtraction.create(tuple_list)
-    # ASSERT
-    assert isinstance(calculation, Subtraction)
-
-
 def test_calculation_addition_instance():
-    """Testing the Calculator Subtract"""
+    """Testing the Calculator Addition"""
     # ARRANGE
-    tuple_list = (2, 4)
+    tuple_list = (1, 2)
     # ACT
     calculation = Addition.create(tuple_list)
     # ASSERT
     assert isinstance(calculation, Addition)
 
 
+def test_calculation_subtraction_instance():
+    """Testing the Calculator Subtract"""
+    # ARRANGE
+    tuple_list = (1, 2)
+    # ACT
+    calculation = Subtraction.create(tuple_list)
+    # ASSERT
+    assert isinstance(calculation, Subtraction)
+
+
+def test_calculation_multiplication_instance():
+    """Testing the Calculator Multiply"""
+    # ARRANGE
+    tuple_list = (1, 2)
+    # ACT
+    calculation = Multiplication.create(tuple_list)
+    # ASSERT
+    assert isinstance(calculation, Multiplication)
+
+
+def test_calculation_division_instance():
+    """Testing the Calculator Multiply"""
+    # ARRANGE
+    tuple_list = (1, 2)
+    # ACT
+    calculation = Division.create(tuple_list)
+    # ASSERT
+    assert isinstance(calculation, Division)
+
+
 def test_calculation_add_get_result_method():
     """Testing the Calculator"""
     # ARRANGE
-    tuple_list = (2, 4)
+    tuple_list = (1, 2)
     # ACT
     calculation = Addition.create(tuple_list)
     # ASSERT
-    assert calculation.get_result() == 6
+    assert calculation.get_result() == 3
 
 
 def test_calculation_subtract_get_result_method():
     """Testing the Calculator Subtract"""
     # ARRANGE
-    tuple_list = (2, 4)
+    tuple_list = (1, 2)
     # ACT
     calculation = Subtraction.create(tuple_list)
     # ASSERT
-    assert calculation.get_result() == -2
+    assert calculation.get_result() == -1
 
 
 def test_calculation_multiply_get_result_method():
-    """Testing the Calculator Subtract"""
+    """Testing the Calculator Multiplication"""
     # ARRANGE
-    tuple_list = (2, 4)
+    tuple_list = (1, 2)
     # ACT
     calculation = Multiplication.create(tuple_list)
     # ASSERT
-    assert calculation.get_result() == 8
+    assert calculation.get_result() == 2
 
 
 def test_calculation_division_get_results_method():
     """Testing the calculator division"""
     # ARRANGE
-    tuple_list = (2, 4)
+    tuple_list = (1, 2)
     # ACT
     calculation = Division.create(tuple_list)
     # ASSERT
