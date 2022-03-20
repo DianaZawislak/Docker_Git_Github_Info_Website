@@ -2,8 +2,9 @@
 {% block content %}
 
     <img src="{{ url_for('static', filename='images/oop.png') }}" class="img-fluid" alt="oop">
+
     <div class="container-fluid py-3">
-        <div class="row align-items">
+        <div class="row align-items-start">
             <h4><u>Encapsulation</u></h4>
             <p class="fs-5"><span class="fs-3">T</span>he ability to "hide" the implementation and the data stored in an
                 object. This
@@ -18,13 +19,19 @@
                 Division of a COBOL program, they are global (not local) and are available to all paragraphs in
                 the program. This makes variables in a program susceptible to alteration in a paragraph where
                 they are not intended to be.</p>
-                <p class="fs-5">Figure 1, to the right, shows an example of encapsulation used in Calculator project which can be
-                    found here <a
+                <p class="fs-5"><em>Figure 1 - to the right, shows an example of encapsulation used in Calculator project
+                    which can be found here <a
                             href="https://github.com/DianaZawislak/Docker_Git_Github_Info_Website/tree/master/calculator"
-                            class="card-link darkgrey" target="_blank">Diana Zawislak's Calculator</a></p>
+                            class="card-link darkgrey" target="_blank">Diana Zawislak's Calculator</a>
+                 Subtract, multiply, division object (instance) that is stored inside calculation
+                   variable encapsulates
+                    the data and functionality to work on data to perform get_results calculations.</em></p>
             </div>
-            <div class="col-5"><img src="{{ url_for('static', filename='images/enc1.jpg') }}" class="img-fluid"
-                                    alt="enc1">
+            <div class="col-5"><img src="{{ url_for('static', filename='images/encaps1.JPG') }}" class="img-fluid"
+                                    alt="encaps1">
+                <p><em>Figure 1. All static methods showed here represent encapsulation.</em></p>
+            </div>
+
             </div>
 
 
