@@ -1,4 +1,4 @@
-import csv
+'''import csv
 
 
 def ClassFactory(class_name, dictionary):
@@ -19,4 +19,4 @@ class CsvReader:
         objects = []
         for row in self.data:
             objects.append(ClassFactory(class_name, row))
-        return objects
+        return objects'''
