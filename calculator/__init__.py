@@ -29,7 +29,3 @@ class Calculator:
         """This is division method"""
         calculation = Division.create(tuple_list)
         return calculation.get_result()
-
-    @classmethod
-    def divide_numbers(cls, value_a, value_b):
-        pass
