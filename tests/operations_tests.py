@@ -10,7 +10,7 @@ def test_calculator_operations_add():
 
 
 def test_calculator_operations_subtract():
-    """testing substraction"""
+    """testing subtraction"""
     assert Subtraction.subtract(8, 4) == 4
 
 

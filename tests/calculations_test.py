@@ -93,4 +93,4 @@ def test_calculator_division_exception():
     # ASSERT
     with pytest.raises(ZeroDivisionError):
         result = calculation.get_result()
-        assert result is True
+        assert result is False
