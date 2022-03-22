@@ -1,6 +1,7 @@
 from os import getenv
 import datetime
 
+
 def utility_text_processors():
     message = "Thank You For Visiting"
 
@@ -8,8 +9,8 @@ def utility_text_processors():
         return getenv('FLASK_ENV', None)
 
     def current_year():
-        currentDateTime = datetime.datetime.now()
-        date = currentDateTime.date()
+        currentdatetime = datetime.datetime.now()
+        date = currentdatetime.date()
         year = date.strftime("%Y")
         return year
 
@@ -22,5 +23,3 @@ def utility_text_processors():
         year=current_year(),
         format_price=format_price
     )
-
-
