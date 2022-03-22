@@ -5,15 +5,12 @@ import pytest
 from calculator import Calculator
 
 
-def tuple_list():
-    """Arranging data for AAA"""
-    return 1.0, 2.0
-
-
 def test_calculator_add_method():
     """Testing the Calculator Addition"""
+    # ARRANGE
+    tuple_list = (1.0, 2.0)
     # Act
-    result = Calculator.add(tuple_list())
+    result = Calculator.add(tuple_list)
     # Assert
     assert result == 3.0
 

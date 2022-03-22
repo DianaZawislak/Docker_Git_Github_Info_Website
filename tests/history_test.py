@@ -55,13 +55,15 @@ def test_add_calculation_to_history(clear_history_fixture, setup_addition_calcul
     assert History.count_history() == 1
 
 
-def test_subtraction_calculation_to_history(clear_history_fixture, setup_subtraction_calculation_fixture):
+def test_subtraction_calculation_to_history(clear_history_fixture,
+                                            setup_subtraction_calculation_fixture):
     """Testing adding subtraction calculations to history"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
     assert History.count_history() == 2
 
 
-def test_multiplication_calculation_to_history(clear_history_fixture, setup_multiplication_calculation_fixture):
+def test_multiplication_calculation_to_history(clear_history_fixture,
+                                               setup_multiplication_calculation_fixture):
     """Testing adding multiplication calculations to history"""
     # pylint: disable=unused-argument,redefined-outer-name,singleton-comparison
     assert History.count_history() == 3
