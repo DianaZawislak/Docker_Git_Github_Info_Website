@@ -22,4 +22,3 @@ def test_calculator_operations_multiply():
 def test_calculator_operations_divide():
     """testing division"""
     assert Division.divide(8, 4) == 2
-

@@ -1,7 +1,6 @@
 """Testing the Calculator with AAA"""
-
-from calculator.Calculation import Addition, Subtraction, Multiplication, Division
 import pytest
+from calculator.Calculation import Addition, Subtraction, Multiplication, Division
 
 
 def test_calculation_addition_instance():
