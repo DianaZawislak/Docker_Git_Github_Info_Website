@@ -87,7 +87,9 @@ font-size: 18px;
  background-color: #303030;
 }
 
-
+.contbcgrd {
+    background-color: grey;
+}
 
 /*-------------change color of non-active pill---------------------*/
 .nav-pills .pill-2 .nav-link:not(.active) {
