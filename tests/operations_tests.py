@@ -11,7 +11,7 @@ def test_calculator_operations_add():
 
 def test_calculator_operations_subtract():
     """testing subtraction"""
-    assert Subtraction.subtract(8, 4) == 4
+    assert Subtraction.subtract(8.0, 4.0) == 4.0
 
 
 def test_calculator_operations_multiply():

@@ -47,32 +47,32 @@
             we created a person class. The person could be refined to be a student by adding student
             characteristics and functions. Since a person may be defined to have a name, address, age, etc.,
             we could now say that a student is a person who attends a school, has a GPA, major etc.</p>
+        <div class="row align-items-start">
+            <div class="col-6">
+                <h4 class="neonblue"><u>Polymorphism</u></h4>
+                <p class="fs-5"><span class="fs-3">L</span>iterally "many forms", this powerful feature allows us to
+                    have the same
+                    method take
+                    on different meanings depending on which class is instantiated. An example might be an abstract
+                    idea called a shape. The shape could have two characteristics: area and perimeter. There could
+                    be two type of shapes (inherited) called circle and square. We would indicate in the shape
+                    class, that there are two values to be determined, area and perimeter. The first determining a
+                    value indicating the number of square inches and the other inches.
+                    calculated.</p>
 
 
-        <h4 class="neonblue"><u>Polymorphism</u></h4>
-        <p class="row align-items">
-        <div class="col-6">
-            <p class="fs-5"><span class="fs-3">L</span>iterally "many forms", this powerful feature allows us to
-                have the same
-                method take
-                on different meanings depending on which class is instantiated. An example might be an abstract
-                idea called a shape. The shape could have two characteristics: area and perimeter. There could
-                be two type of shapes (inherited) called circle and square. We would indicate in the shape
-                class, that there are two values to be determined, area and perimeter. The first determining a
-                value indicating the number of square inches and the other inches.
-                calculated.</p>
+                <h5 class="fs-20">Polymorphism has two implementations:</h5>
+                <p class="fs-20">
+                <li class="fs-20"> inherited polymorphism, which occurs through</li>
+                <li class="fs-20"> inheritance and overriding; ad hoc polymorphism, which occurs between multiple class
+                    structures.
+                </li>
+                </p>
+            </div>
+            <div class="col-6 mt-5"><img src="{{ url_for('static', filename='images/poly3.jpg') }}" class="img-fluid"
+                                         alt="poly3"> <em>Figure 1 Example of polymorphism</em>
 
-
-            <h5 class="fs-20">Polymorphism has two implementations:</h5>
-            <p class="fs-20"></p>
-            <li> inherited polymorphism, which occurs through</li>
-            <li> inheritance and overriding; ad hoc polymorphism, which occurs between multiple class structures.
-            </li>
-            </p>
-        </div>
-        <div class="col-6"><img src="{{ url_for('static', filename='images/poly3.jpg') }}" class="img-fluid"
-                                alt="poly3"> <h5><em></em> Figure 2 Example of polymorphism</em></h5>
-
+            </div>
         </div>
 
 
@@ -85,14 +85,14 @@
             the MOVE command in COBOL. While the MOVE may seem like a concrete statement, it truly is
             abstract. By MOVEing A-VAR to B-VAR, COBOL is required to do all of the editing, alignment, and
             error checking to be sure it is legal and to handle fields of dissimilar lengths and types.</p>
-        <h4><u>Instantiation</u></h4>
+        <h4 class="neonblue"><u>Instantiation</u></h4>
         <p class="fs-20"><span class="fs-3">I</span>nstantiating a class is creating a copy of the class which
             inherits all class variables and
             methods. Instantiating a class in Python is simple. To instantiate a class, we simply call the
             class as if it were a function, passing the arguments that the __init__ method defines. The
             return value will be the newly created object.</p>
 
-        <h4><u>Object</u></h4>
+        <h4 class="neonblue"><u>Object</u></h4>
         <p class="fs-20"><span class="fs-3">A</span>n Object is an instance of a Class. A class is like a blueprint
             while an
             instance is a copy of
@@ -223,12 +223,38 @@
                 <p class="fs-20"><span class="fs-3">T</span>ype Casting is the method to convert the variable data type
                     into a certain data type in order to the operation required to be performed by users. The examples
                     on the right show how Python will cast values as float or integer, however in this project we
-                    already defined values as float.</p></div>
+                    already defined values as float.</p>
+                <img
+                        src="{{ url_for('static', filename='images/typecast3.png') }}"
+                        class="img-fluid mt-1"
+                        alt="typec"><em>Figure 1 Standardizing values to list of floats</em></div>
             <div class="col-1"></div>
             <div class="col-4 mt-5">
-                <img src="{{ url_for('static', filename='images/typecast1.png') }}" class="img-fluid mt-4"
-                     alt="typecast1"><em>Figure 1 here Python will automatically convert result to float</em>
-                <img src="{{ url_for('static', filename='images/typecast2.png') }}" class="img-fluid mt-4"
+                <img src="{{ url_for('static', filename='images/typec.png') }}" class="img-fluid mt-4"
+                     alt="typec"><em>Figure 1 here Python will automatically convert result to float</em>
+                <img src="{{ url_for('static', filename='images/typecast.png') }}" class="img-fluid mt-5"
+                     alt="typecast2"><em>Figure 2 here Python will automatically convert result to integer</em></div>
+        </div>
+        <div class="row align-items_end mt-5">
+            <div class="col-8">
+                <h4 class="neonblue mt-3"><u>Static Method</u></h4>
+                <p class="fs-20"><span class="fs-3">T</span>Static methods, much like class methods, are methods that
+                    are bound to a class rather than its object.
+
+                    They do not require a class instance creation. So, they are not dependent on the state of the
+                    object.
+
+                    The difference between a static method and a class method is:
+
+                <li class="fs-20">Static method knows nothing about the class and just deals with the parameters.</li>
+                <li class="fs-20">Class method works with the class since its parameter is always the class itself.</li>
+                </p>
+                </div>
+
+            <div class="col-4 mt-5">
+                <img src="{{ url_for('static', filename='images/typec.png') }}" class="img-fluid mt-4"
+                     alt="typec"><em>Figure 1 here Python will automatically convert result to float</em>
+                <img src="{{ url_for('static', filename='images/typecast.png') }}" class="img-fluid mt-5"
                      alt="typecast2"><em>Figure 2 here Python will automatically convert result to integer</em></div>
         </div>
         </ul>
@@ -267,12 +293,12 @@
             <li><a href="https://realpython.com/lessons/type-hinting/"
                    class="card-link darkgrey" target="_blank">Type Hint</a></li>
             <li>
-                <a href="https://www.programiz.com/python-programming/polymorphism"
-                   class="card-link darkgrey" target="_blank">Polymorphism</a>
+                <a href="https://www.geeksforgeeks.org/type-casting-in-python-implicit-and-explicit-with-examples/"
+                   class="card-link darkgrey" target="_blank">Type Cast</a>
             </li>
             <li>
-                <a href="https://www.programiz.com/python-programming/polymorphism"
-                   class="card-link darkgrey" target="_blank">Polymorphism</a>
+                <a href="https://www.programiz.com/python-programming/methods/built-in/staticmethod"
+                   class="card-link darkgrey" target="_blank">Static Method</a>
             </li>
             <li>
                 <a href="https://www.programiz.com/python-programming/polymorphism"
