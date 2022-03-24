@@ -84,7 +84,19 @@ font-size: 18px;
 .grey {
  background-color: #303030;
 }
+/*---------------zoom in images---------------------*/
+#zoomA {
+  /* (A) OPTIONAL DIMENSIONS */
+  width: auto;
+  height: auto;
 
+  /* (B) ANIMATE ZOOM */
+  /* ease | ease-in | ease-out | linear */
+  transition: transform ease-in-out 0.5s;
+}
+
+/* (C) ZOOM ON HOVER */
+#zoomA:hover { transform: scale(2.0); }
 .contbcgrd {
     background-color: darkgray;
 }
