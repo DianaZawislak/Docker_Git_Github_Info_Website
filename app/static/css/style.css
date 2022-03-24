@@ -86,16 +86,16 @@ font-size: 18px;
 }
 /*---------------zoom in images---------------------*/
 #zoomA {
-  /* (A) OPTIONAL DIMENSIONS */
+  /* OPTIONAL DIMENSIONS */
   width: auto;
   height: auto;
 
-  /* (B) ANIMATE ZOOM */
+  /*ANIMATE ZOOM */
   /* ease | ease-in | ease-out | linear */
   transition: transform ease-in-out 0.5s;
 }
 
-/* (C) ZOOM ON HOVER */
+/*ZOOM ON HOVER */
 #zoomA:hover { transform: scale(2.0); }
 .contbcgrd {
     background-color: darkgray;
@@ -130,7 +130,7 @@ background-color: #d3d3d3;
 }
 
 .verylightgrey {
-    color: #8f8f8f;
+    color: #686868;
 }
 
 .margin{
