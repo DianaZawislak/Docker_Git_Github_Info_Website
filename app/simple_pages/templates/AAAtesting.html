@@ -3,7 +3,8 @@
 
     <img src="{{ url_for('static', filename='images/AAAbanner.png') }}" class="img-fluid" alt="AAAbanner">
 
-    <div class="container-fluid py-3"><h4 class="neonblue"><u>What is AAA testing?</u></h4>️ ️
+    <div class="container-fluid py-3">
+        <h4 class="neonblue"><u>What is AAA testing?</u></h4>️ ️
         <p class="fs-20"><span class="fs-4">T</span>he AAA pattern is a pattern for structuring tests. It breaks each
             test down into three parts – Arrange, Act, and Assert – where each part is a step leading to the next. The
             arrange step sets up the test’s input values. The act step prompts the primary function being tested. And
@@ -14,7 +15,8 @@
         <div class="row align items">
             <div class="col-8">
                 <h5 class="neonblue">Arrange</h5>
-                <p class="fs-20"><span class="fs-4">T</span>he block of code that sets up the conditions for the test action.</p>
+                <p class="fs-20"><span class="fs-4">T</span>he block of code that sets up the conditions for the test
+                    action.</p>
                 <p class="fs-20">Guidelines</p>
                 <ul>
                     <li>Use a single block of code with no empty lines.</li>
@@ -60,58 +62,110 @@
                         two lines surrounded by empty lines.
                     </li>
                 </ul>
-
-                <h5 class="neonblue">Assert</h5>
-                <p class="fs-20"><span class ="fs-4">T</span>he block of code that performs the assertions on the state of the SUT after the
-                    action.</p>
-                <p class="fs-20">Guidelines</p>
-                <ul>
-                    <li>Use a single block of code with no empty lines.
-
-
-                    </li>
-                    <li>First test result, then side effects.
-                    </li>
-                    <li>Limit the actions that you make in this block. Ideally, no actions should happen, but that is
-                        not always
-                        possible.
-                    </li>
-                    <li>Use simple blocks of assertions. If you find that you are repeatedly writing the same code to
-                        extract
-                        information from the SUT and perform assertions on it, then consider extracting an assertion
-                        helper.
-                    </li>
-                </ul>
             </div>
+
             <div class="col-7"><img src="{{ url_for('static', filename='images/aaatest.png') }}"
                                     class="img-fluid mt-5 mb-2"
                                     alt="aaa">
-                <p class="font18"><em>This image shows how testing for calculator methods for addition, subtraction and
-                    multiplication is broken down to show Arrange, Act and Assert</em></p></div>
-            <h4 class="neonblue"><u>Why is testing important???</u></h4>
-            <p class="fs-20"><span class="fs-4">G</span>oal of python unit testing is to detect as many bugs and inconsistencies in the infancy of
-                the application development as possible. This is achieved by designing and scripting accurate and
-                quality unit tests that can also serve as detailed documentation for the development process. This
-                ensures that bugs and other problems we catch in the first stages of the development, can be fixed by
-                the development team.</p>
-        </div>
 
-    </div>
-    <div class="fs-14">
-        <p class>Resources:
-        <li>
-            <a href="https://developers.mews.com/aaa-pattern-a-functional-approach/"
-               class="card-link darkgrey" target="_blank">AAA patern</a>
-        </li>
-        <li>
-            <a href="https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html"
-               class="card-link darkgrey" target="_blank">AAA Explained</a>
-        </li>
-        <li>
-            <a href="https://quintagroup.com/cms/python/python-unit-testing#:~:text=Testing%20Goal,documentation%20for%20the%20development%20process."
-               class="card-link darkgrey" target="_blank">Importance of tests</a>
-        </li></p>
-    </div>
+                <p class="font18"><em>This image shows how testing for calculator methods for addition, subtraction and
+                    multiplication is broken down to show Arrange, Act and Assert</em></p>
+            </div>
+            <div class="row">
+                <div class="col-7">
+
+                    <h5 class="neonblue">Assert</h5>
+                    <p class="fs-20"><span class="fs-4">T</span>he block of code that performs the assertions on the
+                        state
+                        of the SUT after the
+                        action.</p>
+                    <p class="fs-20">Guidelines</p>
+                    <ul>
+                        <li>Use a single block of code with no empty lines.
+
+
+                        </li>
+                        <li>First test result, then side effects.
+                        </li>
+                        <li>Limit the actions that you make in this block. Ideally, no actions should happen, but that
+                            is
+                            not always
+                            possible.
+                        </li>
+                        <li>Use simple blocks of assertions. If you find that you are repeatedly writing the same code
+                            to
+                            extract
+                            information from the SUT and perform assertions on it, then consider extracting an assertion
+                            helper.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <img src="{{ url_for('static', filename='images/aaa4.png') }}"
+                         class="img-fluid mb-2"
+                         alt="aaa4">
+                </div>
+                <h4 class="neonblue"><u>Why is testing important???</u></h4>
+
+                <p class="fs-20"><span class="fs-4">G</span>oal of python testing is to detect as many bugs and
+                    inconsistencies in the infancy of
+                    the application development as possible. As software scales in codebase size, it's impossible for a
+                    person or even a large team to keep up with all of the changes and the interactions between the
+                    changes. This is achieved by designing and scripting accurate and
+                    quality unit tests that can also serve as detailed documentation for the development process.</p>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="fs-20"> This
+                            ensures that bugs and other problems we catch in the first stages of the development, can be
+                            fixed by
+                            the development team.Automated testing is the only proven method for building reliable
+                            software once
+                            they grow past the point of a simple prototype. Many major software program development
+                            failures can be
+                            traced back to inadequate or a complete lack of testing.
+
+                            It's impossible to know whether software works properly unless it is tested. While testing
+                            can be done
+                            manually, by a user clicking buttons or typing in input, it should be performed
+                            automatically by writing
+                            software programs that test the application under test.
+
+                            There are many forms of testing and they should all be used together. When a single function
+                            of a
+                            program is isolated for testing, that is called unit testing. Testing more than a single
+                            function in an
+                            application at the same time is known as integration testing. User interface testing ensures
+                            the
+                            correctness of how a user would interact with the software.</p></div>
+                    <div class="col-6"><img src="{{ url_for('static', filename='images/testingpy.png') }}"
+                                            class="img-fluid mb-2"
+                                            alt="aaa"></div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="fs-14 mt-5">
+            <p class>Resources:
+            <li>
+                <a href="https://developers.mews.com/aaa-pattern-a-functional-approach/"
+                   class="card-link darkgrey" target="_blank">AAA patern</a>
+            </li>
+            <li>
+                <a href="https://jamescooke.info/arrange-act-assert-pattern-for-python-developers.html"
+                   class="card-link darkgrey" target="_blank">AAA Explained</a>
+            </li>
+            <li>
+                <a href="https://quintagroup.com/cms/python/python-unit-testing#:~:text=Testing%20Goal,documentation%20for%20the%20development%20process."
+                   class="card-link darkgrey" target="_blank">Importance of tests</a>
+            </li>
+            <li>
+                <a href="https://www.fullstackpython.com/testing.html"
+                   class="card-link darkgrey" target="_blank">Importance of tests</a>
+            </li>
+            </p>
+        </div>
 
 
     </div>
