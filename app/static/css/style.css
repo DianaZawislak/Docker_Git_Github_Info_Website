@@ -118,7 +118,7 @@ background-color: #d3d3d3;
 }
 
 .verylightgrey {
-    color: #9c9c9c;
+    color: #8f8f8f;
 }
 
 .margin{
@@ -174,5 +174,11 @@ ul {
   margin-left: ($spacer * .25) !important;
 }
 
+.indent {
+    list-style: none;
+    width: auto;
+    text-indent: -20px; /* key property */
+    margin-left: 20px; /* key property */
 
-
+}
+li { margin-bottom: 10px; }

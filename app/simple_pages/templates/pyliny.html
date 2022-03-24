@@ -58,80 +58,122 @@
             </div>
             <div class="row">
                 <div class="col-7">
-            <h4 class="neonblue"><u>How to run Pytest?</u></h4>
-            <p class="fs-20"> There are few way to run pytest. First of all it should be installed on your machine.
-                This can be done by running command </p>
-            <ul class="list-unstyled">
-                <li><span class="offwhite">pip install -U pytest</span></li>
-            </ul>
-            <p class="fs-20"> Now you can check what version of pytest is installed and if it is compatible with
-                your version of Python by running a command</p>
-            </li>
-            <ul class="list-unstyled">
-                <li><span class="offwhite">$ pytest --version</span></li>
-            </ul>
-            <p class="fs-20">Now we can proceed to run a test by running a command</p>
-            <ul class="list-unstyled">
-                <li><span class="offwhite"> python -m pytest</span></li>
-            </ul>
-            <p class="fs-20">Another way to run pytest when using Pycharm is to use play button in top bar on the
-                right-hand side. the options are to run a test, to debug or run a test with coverage which I will soon
-                discuss. Figure 2 shows those buttons.</p>
-            <p class="fs-20">In our case however, the git we are working with to build this site as well as calculator
-                program includes docker container that includes all necessary thing we need for the purpose of this
-                exercise. That means we can skip and install and as long as our docker container is running, and we are
-                using an interpreter from that container we can simply use this command</p>
-            <ul class="list-unstyled">
-                <li><span class="offwhite">pytest</span></li>
-            </ul>
+                    <h4 class="neonblue"><u>How to run Pytest?</u></h4>
+                    <p class="fs-20"> There are few way to run pytest. First of all it should be installed on your
+                        machine.
+                        This can be done by running command </p>
+                    <ul class="list-unstyled">
+                        <li><span class="offwhite">pip install -U pytest</span></li>
+                    </ul>
+                    <p class="fs-20"> Now you can check what version of pytest is installed and if it is compatible with
+                        your version of Python by running a command</p>
+                    </li>
+                    <ul class="list-unstyled">
+                        <li><span class="offwhite">$ pytest --version</span></li>
+                    </ul>
+                    <p class="fs-20">Now we can proceed to run a test by running a command</p>
+                    <ul class="list-unstyled">
+                        <li><span class="offwhite"> python -m pytest</span></li>
+                    </ul>
+                    <p class="fs-20">Another way to run pytest when using Pycharm is to use play button in top bar on
+                        the
+                        right-hand side. the options are to run a test, to debug or run a test with coverage which I
+                        will soon
+                        discuss. Figure 2 shows those buttons.</p>
+                    <p class="fs-20">In our case however, the git we are working with to build this site as well as
+                        calculator
+                        program includes docker container that includes all necessary thing we need for the purpose of
+                        this
+                        exercise. That means we can skip and install and as long as our docker container is running, and
+                        we are
+                        using an interpreter from that container we can simply use this command</p>
+                    <ul class="list-unstyled">
+                        <li><span class="offwhite">pytest</span></li>
+                    </ul>
                 </div>
                 <div class="col-1"></div>
                 <div class="col-4 mt-4">
                     <img src="{{ url_for('static', filename='images/playbutton.png') }}"
-                                    class="img-responsive right-block d-block mx-auto" alt="playbutton">
-                <p class="fs-14"><em>Figure 2 These buttons provide one of the options to run pytest from Pycharm</em></p>
-<img src="{{ url_for('static', filename='images/pytestversion.png') }}"
-                                    class="img-fluid" alt="pytestversion">
-                <p class="fs-14"><em>Figure 3 Pytest version shows after running pytest --version command</em></p>
-        </div>
+                         class="img-responsive right-block d-block mx-auto" alt="playbutton">
+                    <p class="fs-14"><em>Figure 2 These buttons provide one of the options to run pytest from
+                        Pycharm</em></p>
+                    <img src="{{ url_for('static', filename='images/pytestversion.png') }}"
+                         class="img-fluid" alt="pytestversion">
+                    <p class="fs-14"><em>Figure 3 Pytest version shows after running pytest --version command</em></p>
+                </div>
 
 
-        <h4 class="neonblue mt-3"><u>What is Pylint?</u></h4>️ ️
-        <p class="fs-20"><span class="fs-4">P</span>ylint is a tool that checks for errors in Python code, tries to
-            enforce a coding standard and looks for code
-            smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks
-            can
-            be refactored and can offer you details about the code's complexity.</p>
+                <h4 class="neonblue mt-3"><u>What is Pylint?</u></h4>️ ️
+                <p class="fs-20"><span class="fs-4">P</span>ylint is a tool that checks for errors in Python code, tries
+                    to
+                    enforce a coding standard and looks for code
+                    smells. It can also look for certain type errors, it can recommend suggestions about how particular
+                    blocks
+                    can
+                    be refactored and can offer you details about the code's complexity. Figures 3 and 4 below show
+                    both, failed and successful pylint test outputs which I performed during creating this project</p>
+
+                <h4 class="neonblue mt-3"><u>How to Run Pylint in Pycharm?</u></h4>
+                <div class="row aling-items-start">
+                    <div class="col-6">
+                    <p class="fs-20">Pylint can be installed using traditional way by running command in terminal</p>
+                    <ul class="list-unstyled">
+                        <li><span class="offwhite">pip install pylint</span></li>
+                    </ul>
+                    <p class="fs-20">Another way to integrate it in PyCharm is:</p>
+                    <ul class="list-unstyled indent">
+                        <li> 1. Go to Preferences > Plugins > Browse repositories...</li>
+
+                        <li>2. Right-click on the plugin named Pylint, select Download and Install and restart PyCharm
+                            when
+                            prompted
+                        </li>
+                    </ul>
+
+                    <p class="fs-20">If the plugin is not finding the Pylint executable (e.g. is not inside the PATH
+                        environmental
+                        variable), you can specify it manually using the plugin settings:</p>
+                    <ul class="list-unstyled indent">
+                        <li>1. Preferences > Other Settings > Pylint or simply click the gear icon from the side bar of
+                            the
+                            Pylint tool window
+                        </li>
+
+                        <li>2. Type the path directly or use the Browse button to open a file selection dialog</li>
+
+                        <li>3. Press the Test button to check if the plugin is able to run the executable</li>
+                    </ul>
+                </div>
 
 
-        <div class="container">
-            <p class="fs-14">Resources:
-            <ul class="fs-14">
-                <li>
-                    <a href="https://www.softwaretestinghelp.com/pytest-tutorial/#:~:text=Python%20offers%20three%20types%20of%20testing%3A%201%20Unittest%3A,it%20easy%20to%20write%20test%20cases%20in%20Python.
+                <div class="container">
+                    <p class="fs-14">Resources:
+                    <ul class="fs-14">
+                        <li>
+                            <a href="https://www.softwaretestinghelp.com/pytest-tutorial/#:~:text=Python%20offers%20three%20types%20of%20testing%3A%201%20Unittest%3A,it%20easy%20to%20write%20test%20cases%20in%20Python.
 "
-                       class="card-link darkgrey" target="_blank">Pytest</a>
-                </li>
-                <li>
-                    <a href="https://pylint.pycqa.org/en/latest/"
-                       class="card-link darkgrey" target="_blank">Pylint</a>
-                </li>
-                <li>
-                    <a href="https://www.tutorialspoint.com/class-or-static-variables-in-python"
-                       class="card-link darkgrey" target="_blank">Static Property</a>
-                </li>
-                <li>
-                    <a href="https://www.tutorialspoint.com/class-or-static-variables-in-python"
-                       class="card-link darkgrey" target="_blank">Static Property</a>
-                </li>
-        </div>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+                               class="card-link darkgrey" target="_blank">Pytest</a>
+                        </li>
+                        <li>
+                            <a href="https://pylint.pycqa.org/en/latest/"
+                               class="card-link darkgrey" target="_blank">Pylint</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialspoint.com/class-or-static-variables-in-python"
+                               class="card-link darkgrey" target="_blank">Static Property</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tutorialspoint.com/class-or-static-variables-in-python"
+                               class="card-link darkgrey" target="_blank">Static Property</a>
+                        </li>
+                </div>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
 
 {% endblock %}
