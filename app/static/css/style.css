@@ -27,8 +27,6 @@ background-image: linear-gradient(to bottom right, #808080, #f2f3f4);
 .neonblue {
    color: #0000FF  !important;
 }
-.navbar {
-    font-family:Verdana !important; }
 
 .navbar-toggler {
     border: 3px solid #303030 !important;
@@ -108,7 +106,9 @@ font-size: 18px;
   right: 2rem;
   bottom: 2rem;
 }
-
+.b1 {
+  border-top: 1px solid #8f8f8f;
+}
 .hidden {
   display: none;
 }
