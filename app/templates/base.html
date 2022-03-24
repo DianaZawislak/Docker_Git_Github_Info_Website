@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<link rel="shortcut icon" href="{{ url_for('static', filename='images/logo1.png') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo1.png') }}">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,9 +65,11 @@
 <div class="container">
     <nav class="navbar outset mb-3 navbar-expand-md navbar-light navbar-default">
         <div class="container">
-            <a class="navbar-brand hidden-s" style="color: darkgrey" href="{{ url_for('simple_pages.show', page="index")}}">
-                <img ml-5 src="{{ url_for('static', filename='images/logo1.png') }}" alt="logo1" style="margin-right: 30px" style="margin-left: 30px" height="100">Diana Zawislak
-                </a>
+            <a class="navbar-brand hidden-s" style="color: darkgrey"
+               href="{{ url_for('simple_pages.show', page="index") }}">
+                <img ml-5 src="{{ url_for('static', filename='images/logo1.png') }}" alt="logo1"
+                     style="margin-right: 30px" style="margin-left: 30px" height="100">Diana Zawislak
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -76,10 +78,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{ url_for('simple_pages.show', page="index") }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}">About Me</a>
+                        <a class="nav-link" href="{{ url_for('simple_pages.show', page="about") }}">About Me</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -87,14 +89,19 @@
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Technology</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page1")}}">GitHub and Git</a></li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page2")}}">Docker and DockerHub</a></li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page3")}}">Python And Flask</a></li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page4")}}">CI/CD</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page1") }}">GitHub
+                                and Git</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page2") }}">Docker
+                                and DockerHub</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="page3") }}">Python
+                                And Flask</a></li>
+                            <li><a class="dropdown-item"
+                                   href="{{ url_for('simple_pages.show', page="page4") }}">CI/CD</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="about")}}">Contact</a></li>
+                            <li><a class="dropdown-item"
+                                   href="{{ url_for('simple_pages.show', page="about") }}">Contact</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -102,14 +109,19 @@
                            data-bs-toggle="dropdown" aria-expanded="false">
                             Python Fundamentals</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="AAAtesting")}}">AAA Testing</a></li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="pyliny")}}">Pylint and other tests</a></li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="OOP")}}">OOP</a></li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="solid")}}">SOLID</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="AAAtesting") }}">AAA
+                                Testing</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="pyliny") }}">Pylint
+                                and other tests</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="OOP") }}">OOP</a>
+                            </li>
+                            <li><a class="dropdown-item"
+                                   href="{{ url_for('simple_pages.show', page="solid") }}">SOLID</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="{{ url_for('simple_pages.show', page="about")}}">Contact</a></li>
+                            <li><a class="dropdown-item"
+                                   href="{{ url_for('simple_pages.show', page="about") }}">Contact</a></li>
                         </ul>
                     </li>
 
@@ -117,42 +129,44 @@
             </div>
         </div>
     </nav>
-        {% block content %}
-        {% endblock %}
-    </div>
+    {% block content %}
+    {% endblock %}
+</div>
 
 <!-----------------------------------FOOTER----------------------------------->
- <div class="container">
-        <footer class="row align-items-center border-top">
-            <div class="col-5  verylightgrey">&copy; {{ year }} Diana Zawislak / Environment: {{ deployment_environment
-                    }}</div>
-
-            <div class="col-1">
-                <img src="/static/images/logo1.png" height="38" width="38" class="img-fluid"></div>
+<div class="container mt-4">
+    <footer class="row align-items-center border-top">
+        <div class="col-6  verylightgrey">&copy; {{ year }} Diana Zawislak /
+            Environment: {{ deployment_environment }}</div>
 
 
+        <!--<ul class="nav col-md-5 justify-content-end verylightgrey">
+          <li class="nav-item"><a href="/" class="nav-link px-2 verylightgrey">Home</a></li>
+            <li class="nav-item"><a href="/page1" class="nav-link px-2 verylightgrey">GitHub</a></li>
+            <li class="nav-item"><a href="/page2" class="nav-link px-2 verylightgrey">Docker</a></li>
+            <li class="nav-item"><a href="/page3" class="nav-link px-2 verylightgrey">Python/Flask</a></li>
+            <li class="nav-item"><a href="/page4" class="nav-link px-2 verylightgrey">CI/CD</a></li> -->
 
 
-            <!--<ul class="nav col-md-5 justify-content-end verylightgrey">
-              <li class="nav-item"><a href="/" class="nav-link px-2 verylightgrey">Home</a></li>
-                <li class="nav-item"><a href="/page1" class="nav-link px-2 verylightgrey">GitHub</a></li>
-                <li class="nav-item"><a href="/page2" class="nav-link px-2 verylightgrey">Docker</a></li>
-                <li class="nav-item"><a href="/page3" class="nav-link px-2 verylightgrey">Python/Flask</a></li>
-                <li class="nav-item"><a href="/page4" class="nav-link px-2 verylightgrey">CI/CD</a></li> -->
-<div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"><a href="/about" class="nav-link px-2 verylightgrey">About Me</a></div>
-                <div class="col-1"> <a href="https://github.com/DianaZawislak"
-                   target="_blank">
-                    <img src="/static/images/github.svg" height="38" width="38" class="opacity-50">
-                </a></div>
-                <div class="col-1"><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-                   target="_blank">
-                    <img src="/static/images/linkedin.svg" height="38" width="38" class="opacity-50">
-                </a></div>
-        </footer>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
 
-<!--<button class="back-to-top">Back To Top</button> -->
+        <div class="col-1 align-items-right">
+            <a href="/about"><img src="/static/images/logo1.png" height="38" width="38" class="img-fluid"></a></div>
+        <div class="col-1 align-items-right"><a href="https://github.com/DianaZawislak"
+                              target="_blank">
+            <img src="/static/images/github.svg" height="38" width="38" class="opacity-50">
+        </a></div>
+
+        <div class="col-1 align-items-right"><a
+                href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank">
+            <img src="/static/images/linkedin.svg" height="38" width="38" class="opacity-50">
+        </a></div>
+    </footer>
+
+    <!--<button class="back-to-top">Back To Top</button> -->
 
 
     <!-- <footer>
@@ -161,14 +175,13 @@
     </footer> -->
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </footer>
 
-</footer>
-
- </div>
+</div>
 </body>
 </html>
