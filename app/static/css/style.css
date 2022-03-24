@@ -96,7 +96,7 @@ font-size: 18px;
 }
 
 /*ZOOM ON HOVER */
-#zoomA:hover { transform: scale(2.0); }
+#zoomA:hover { transform: scale(1.7); }
 .contbcgrd {
     background-color: darkgray;
 }
