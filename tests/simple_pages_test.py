@@ -54,18 +54,18 @@ def test_request_page4(client):
     assert b"CI/CD" in response.data
 
 
-def test_request_AAAtesting(client):
+def test_request_aaatesting(client):
     """This tests AAA page"""
     response = client.get("/AAAtesting")
     assert response.status_code == 200
     assert b"What is AAA testing?" in response.data
 
 
-def test_request_OOP(client):
+def test_request_oop(client):
     """This tests OOP page"""
     response = client.get("/OOP")
     assert response.status_code == 200
-    assert b"Local variables altered in the process are separate from local variables" in response.data
+    assert b"Local variables altered in the process are separate from local variab" in response.data
 
 
 def test_request_pyliny(client):
