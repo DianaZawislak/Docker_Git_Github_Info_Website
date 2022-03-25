@@ -151,10 +151,13 @@
                         <ul class="list-unstyled">
                             <li><span class="offwhite">pytest --pylint</span></li>
                         </ul>
-                    <p class="fs-20">Pylint has an advanced message control for its checks, offering the ability to enable / disable a
-                    message either from the command line or from the configuration file, as well as from the code
-                        itself. Figure 6 shows examples of <em>pylint disable</em> message used in calculator program</p>
-                </div>
+                        <p class="fs-20">Pylint has an advanced message control for its checks, offering the ability to
+                            enable / disable a
+                            message either from the command line or from the configuration file, as well as from the
+                            code
+                            itself. Figure 6 shows examples of <em>pylint disable</em> message used in calculator
+                            program</p>
+                    </div>
 
 
                     <div class="col-6">
@@ -171,7 +174,7 @@
 
                     <h1 class="b1"></h1>
                     <h4 class="neonblue mt-3"><u>What is Coverage?</u></h4>
-                    <p class="fs-20"><span class="fs-4">C</span>overage.py is a tool for measuring code coverage of
+                    <p class="fs-20"><span class="fs-4">C</span>overage is a tool for measuring code coverage of
                         Python programs. It monitors your program,
                         noting which parts of the code have been executed, then analyzes the source to identify code
                         that
@@ -183,17 +186,63 @@
                 </div>
 
 
-                    <div class="row align-items-start">
-                        <div class="col-6">
-                            <p class="fs-20">content</p>
-                        </div> ️
-                        <div class="col-6"><img src="{{ url_for('static', filename='coveragereport99.png') }}"
+                <div class="row align-items-start">
+                    <div class="col-6">
+                        <h5>Capabilities</h5>
+                        <p class="fs-20">
+                        <p class="fs-20">Coverage can do a number of things:</p>
+                        <ul class="list-unstyled indent">
+                            <li>1. By default it will measure line (statement) coverage.
+                            </li>
+
+                            <li>2. It can also measure branch coverage.</li>
+
+                            <li>3. It can tell you what tests ran which lines.</li>
+                            <li>4. It can produce reports in a number of formats: text, HTML, XML, LCOV, and JSON.</li>
+                            <li>5. For advanced uses, there’s an API, and the result data is available in a SQLite
+                                database.
+                            </li>
+                        </ul>
+                        <p class="fs-20">To start install coverage by using command</p>
+                        <ul class="list-unstyled">
+                            <li><span class="offwhite">pip install coverage</span></li>
+                        </ul>
+                        <p class="fs-20">Next we can run coverage with command</p>
+                        <ul class="list-unstyled">
+                            <li><span class="offwhite">coverage run</span></li>
+                        </ul>
+                        <p class="fs-20">Or if using pytest plugin (this project)</p>
+                        <ul class="list-unstyled">
+                            <li><span class="offwhite">pytest -cov</span></li>
+                        </ul>
+                        <p class="fs-20">Or</p>
+                        <ul class="list-unstyled">
+                            <li><span class="offwhite">pytest --cov</span></li>
+                            to run coverage and generate general report in terminal screen (Figure 6)
+                        </ul>
+                        <p class="fs-20">To get more detailed report we can run</p>
+                        <ul class="list-unstyled">
+                            <li><span class="offwhite">coverage html</span></li>
+
+                        </ul>
+                        <p class="fs-20">Which will generate folder with html files for each module (Figures 7 and 8)
+                            which can be opened in local host as shown.</p>
+                    </div>
+                    ️
+                    <div class="col-6">
+                        <img src="{{ url_for('static', filename='images/coveragereport99.png') }}"
                              class="img-fluid" alt="coveragereport99" id="zoomA">
-                        <p class="fs-14"><em>Figure 7 Results of failed pylint test</em></p>
+                        <p class="fs-14"><em>Figure 6 The use of pylint disable message</em></p>
 
-                        </div>
+                        <img src="{{ url_for('static', filename='images/covindex.png') }}"
+                             class="img-fluid" alt="covindex" id="zoomA">
+                        <p class="fs-14"><em>Figure 7 Index page of coverage html report</em></p>
 
-
+                        <img src="{{ url_for('static', filename='images/covexamp.png') }}"
+                             class="img-fluid" alt="covexamp" id="zoomA">
+                        <p class="fs-14"><em>Figure 8 Module opened with html coverage report</em></p>
+                    </div>
+                    </div>
 
                     <div class="container">
                         <p class="fs-14">Resources:
