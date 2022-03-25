@@ -13,7 +13,7 @@ def test_request_oop(client):
     """This tests OOP page"""
     response = client.get("/OOP")
     assert response.status_code == 200
-    assert b"Local variables altered in the process are separate from local variab" in response.data
+    assert b"Encapsulation" in response.data
 
 
 def test_request_pyliny(client):
