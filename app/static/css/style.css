@@ -121,6 +121,10 @@ font-size: 18px;
 .b1 {
   border-top: 1px solid #8f8f8f;
 }
+.b2 {
+  border-top: 4px solid #8f8f8f;
+}
+
 .hidden {
   display: none;
 }
