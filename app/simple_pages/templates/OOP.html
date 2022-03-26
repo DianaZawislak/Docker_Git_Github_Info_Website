@@ -288,7 +288,9 @@
                 <div class="col-12">
                     <h1 class="b1"></h1>
                     <h4 class="neonblue mt-5"><u>Static Property</u></h4>
-<div class="row">       <p class="fs-20"><span class="fs-4">W</span>hen we declare a variable inside a class but
+<div class="row">
+    <div class="col-7">
+    <p class="fs-20"><span class="fs-4">W</span>hen we declare a variable inside a class but
                         outside any method, it is called as class or static variable in python. Class or static
                         variable can be referred through a class but not directly through an instance.
 
@@ -298,6 +300,7 @@
                         static
                         variable
                     </p>
+    </div>
                     <h1 class="b1"></h1>
                     <h4 class="neonblue"><u>Instantiation</u></h4>
                     <p class="fs-20"><span class="fs-4">I</span>nstantiating a class is creating a copy of the
@@ -310,6 +313,8 @@
                         class as if it were a function, passing the arguments that the __init__ method defines.
                         The
                         return value will be the newly created object.</p>
+    </div>
+</div>
 
                     <h1 class="b1"></h1>
                     <h4 class="mt-5 neonblue"><u>Constructor</u></h4>
@@ -354,6 +359,8 @@
                         parameter (named after the fixture) in the test function’s definition.</p>
                     <h1 class="b1"></h1>
                     <h4 class="mt-5 neonblue"><u>Namespace</u></h4>
+                <div class="row">
+                    <div class="col-7">
                     <p class="fs-20"><span class="fs-3">A</span> namespace is a system that has a unique name
                         for
                         each and every
@@ -398,6 +405,14 @@
                         lifetime of that namespace comes to an end. Hence, it is not possible to access the
                         inner
                         namespace’s objects from an outer namespace.</p>
+                    </div>
+                    <div class="col-5">
+                        <img src="{{ url_for('static', filename='images/namespace.png') }}"
+                             class="img-fluid"
+                             alt="object">
+                    </div>
+
+
 
                     <h1 class="b1"></h1>
                     <h4 class="mt-5 neonblue"><u>Unit testing</u></h4>
@@ -434,10 +449,10 @@
                                 gets larger,
                                 type
                                 hints can help to debug and prevent some silly mistakes.</p></div>
-                        <div class="col-3 mt-5"><img
+                        <div class="col-3 pb-4"><img
                                 src="{{ url_for('static', filename='images/typehint.png') }}"
                                 class="img-fluid"
-                                alt="typehint"><em>Figure 1 In our calculator program we find
+                                alt="typehint" id="zoomA"><em>Figure 8 In our calculator program we find
                             few type
                             hints,
                             one
@@ -462,18 +477,18 @@
                             <img
                                     src="{{ url_for('static', filename='images/typecast3.png') }}"
                                     class="img-fluid mt-1"
-                                    alt="typec"><em>Figure 1 Standardizing values to list of floats</em></div>
+                                    alt="typec" id="zoomA"><em>Figure 9 Standardizing values to list of floats</em></div>
 
                         <div class="col-1"></div>
-                        <div class="col-4 mt-5">
+                        <div class="col-4">
                             <img src="{{ url_for('static', filename='images/typec.png') }}"
-                                 class="img-fluid mt-5"
-                                 alt="typec" id="zoomA"><em>Figure 1 here Python will automatically convert
+                                 class="img-fluid"
+                                 alt="typec" id="zoomA"><em>Figure 10 here Python will automatically convert
                             result
                             to float</em>
                             <img src="{{ url_for('static', filename='images/typecast.png') }}"
                                  class="img-fluid mt-3"
-                                 alt="typecast2" id="zoomA"><em>Figure 2 here Python will automatically convert
+                                 alt="typecast2" id="zoomA"><em>Figure 11 here Python will automatically convert
                             result to integer</em>
                         </div>
                     </div>
@@ -491,6 +506,7 @@
     </ul>
     </div>
 
+  <h1 class="b1 pt-5"></h1>
     <div class="container fs-14">
         <p style="font-size: small">Resources:
         <ul style="font-size: small">
