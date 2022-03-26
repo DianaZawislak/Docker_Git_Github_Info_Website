@@ -1,26 +1,30 @@
 
 body {
-background-image: linear-gradient(to bottom right, #808080, #f2f3f4);
+    background-image: linear-gradient(to bottom right, #808080, #f2f3f4);
 }
 
 .darkgrey {
- color: #303030;
+    color: #303030;
 }
 
 /*------------------------------ Navbar Custom -------------------------------*/
 .navbar-default {
-    background-image: linear-gradient(#333333, #71797E); !important;
+    background-image: linear-gradient(#333333, #71797E);
+!important;
 }
+
 .navbar-default .navbar-nav > li > a {
     color: silver !important;
 }
+
 .navbar-default .navbar-nav > li > a:hover {
     color: #39ff14 !important;
 }
 
 
 .navbar {
-    font-family:Verdana !important; }
+    font-family: Verdana !important;
+}
 
 .navbar-toggler {
     border: 3px solid #303030 !important;
@@ -34,69 +38,73 @@ background-image: linear-gradient(to bottom right, #808080, #f2f3f4);
 a:hover {
     color: #39ff14 !important;
 }
+
 a {
     color: darkslategrey;
 }
 
 .hand {
- font-family: "lucida handwriting", "Courier New", monospace;
+    font-family: "lucida handwriting", "Courier New", monospace;
 }
+
 /*-------------------------------Borders---------------------------------*/
 
 .outset {
- border-style: outset;
- border-color: dimgrey;
- border-width: 5px;
+    border-style: outset;
+    border-color: dimgrey;
+    border-width: 5px;
 }
 
 .outset1 {
- border-style: outset;
- border-color: dimgrey;
- border-width: 15px;
+    border-style: outset;
+    border-color: dimgrey;
+    border-width: 15px;
 }
 
 .inset {
- border-style: inset;
- border-color: royalblue;
- border-width: 10px;
+    border-style: inset;
+    border-color: royalblue;
+    border-width: 10px;
 }
+
 /*----------------------------------Font Sizes-------------------------------*/
 .font25 {
- font-size: 25px;
+    font-size: 25px;
 }
-.font25{
 
-font-size: 25px;
+.font25 {
+
+    font-size: 25px;
 }
-.font60{
-font-size: 60px !important;
+
+.font60 {
+    font-size: 60px !important;
 }
+
 .font18 {
-font-size: 18px;
+    font-size: 18px;
 }
 
 .grey {
- background-color: #303030;
+    background-color: #303030;
 }
-
 
 
 /*-------------change color of non-active pill---------------------*/
 .nav-pills .pill-2 .nav-link:not(.active) {
- background-color: #282828;
- color: white;
+    background-color: #282828;
+    color: white;
 }
 
 /*------------------change color of active pill --------------------*/
 .nav-pills .pill-1 .nav-link {
- background-color: #101010;
- color: white;
+    background-color: #101010;
+    color: white;
 }
 
 
-
 .offwhite {
-font-color: #E0E0E0;
+    font-color: #E0E0E0;
 }
 
 .verylightgrey {
@@ -104,39 +112,39 @@ font-color: #E0E0E0;
 }
 
 
-
-
-
-.margin{
- margin-left: -350px;
+.margin {
+    margin-left: -350px;
 
 }
+
 .margin1 {
- margin-left: -150px;
+    margin-left: -150px;
 }
 
 .px-2 {
-  padding-left: ($spacer * 50) !important;
-  padding-right: ($spacer * 10) !important;
+    padding-left: ($ spacer *50) !important;
+    padding-right: ($ spacer *10) !important;
 }
 
 .px-right {
-  padding-left:($spacer * 5) !important;
+    padding-left:($ spacer *5) !important;
 
 }
+
 .b {
-  flex: 1;
-  text-align: right;
+    flex: 1;
+    text-align: right;
 }
 
 .box {
-  display: flex;
-  align-items: right;
-  justify-content: right;
+    display: flex;
+    align-items: right;
+    justify-content: right;
 }
+
 .boxdiv {
-  width: auto;
-  height: auto;
+    width: auto;
+    height: auto;
 }
 
 .ml-auto {
@@ -149,22 +157,23 @@ ul {
 }
 
 .back-to-top {
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  border-radius: 100%;
-  background: #7ac9f9;
-  padding: 0.5rem;
-  border: none;
-  cursor: pointer;
-  opacity: 100%;
-  transition: opacity 0.5s;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: #7ac9f9;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
 }
 
-.card  {
+.card {
     background-color: #808080;
 
 }
+
 .card-body {
     background-color: #808080;
 
