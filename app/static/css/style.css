@@ -17,6 +17,8 @@ background-image: linear-gradient(to bottom right, #808080, #f2f3f4);
 .navbar-default .navbar-nav > li > a:hover {
     color: #39ff14 !important;
 }
+
+
 .navbar {
     font-family:Verdana !important; }
 
