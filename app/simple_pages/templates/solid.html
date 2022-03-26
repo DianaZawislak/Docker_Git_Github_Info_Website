@@ -1,13 +1,116 @@
 {% extends "base.html" %}
 {% block content %}
-<img src="{{ url_for('static', filename='images/SOLIDbanner.png') }}" class="img-fluid" alt="SOLIDbanner">
-<li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+    <img src="{{ url_for('static', filename='images/SOLIDbanner.png') }}" class="img-fluid" alt="SOLIDbanner">
+    <div class="row align-items-center">
+        <div class="col-6 py-4">
+            <img src="{{ url_for('static', filename='images/s.png') }}"
+                 class="img-fluid"
+                 alt="s">
+        </div>
+        <div class="col-6 py-4">
+            <p class="fs-20">Each class shall be responsible for only one single concept. In calculator, classes such as
+                addition, subtraction, multiplication and division all have one and only one function.
+                In other words, every component of your code (in general a class, but also a function) should have one
+                and only one responsibility. As a consequence of that, there should be only a reason to change it.
 
+            </p>
+        </div>
+        <h1 class="b1 pt-5"></h1>
+        <div class="row align-items-center">
+            <div class="col-6 pb-4">
+                <img src="{{ url_for('static', filename='images/o.png') }}"
+                     class="img-fluid"
+                     alt="o">
+            </div>
+            <div class="col-6 pb-4">
+                <p class="fs-20">You should not need to modify the code you have already written to accommodate new
+                    functionality, but simply add what you now need. If we were to add new function to our calculator
+                    for example square root, we only need to add Squareroot class that will automatically inherit from
+                    Calculation class.
+                    The newly formed sub-class will be immediately picked up by __subclasses__() and no modification in
+                    any other part of the code needs to happen.
+                    The result is a very flexible class, that requires minimum time to be maintained.
+
+                </p>
+            </div>
+            <h1 class="b1 pt-5"></h1>
+            <div class="row align-items-center">
+                <div class="col-6 pb-4">
+                    <img src="{{ url_for('static', filename='images/l.png') }}"
+                         class="img-fluid"
+                         alt="l">
+                </div>
+                <div class="col-6 pb-4">
+                    <p class="fs-20">If a subclass redefines a function also present in the parent class, a client-user
+                        should not be noticing any difference in behaviour, and it is a substitute for the base class.
+                        For example, if you are using a function and your colleague change the base class, you should
+                        not notice any difference in the function that you are using. For this principle, there is no
+                        standard “template-like” solution where it must be applied, and it is hard to offer a “standard
+                        example” to showcase.
+                        The child class extends the behavior of its parent, but never narrows it down. In our calculator
+                        Child Classes are
+                        inheriting from the parent "Calculation" and each have their own "get_result():" methods,
+                        which operate in similarly expected ways without interfering with each other or the
+                        parent.
+
+                    </p>
+                </div>
+                <h1 class="b1 pt-5"></h1>
+                <div class="row align-items-center">
+                    <div class="col-6 pb-4">
+                        <img src="{{ url_for('static', filename='images/i.png') }}"
+                             class="img-fluid"
+                             alt="i">
+                    </div>
+                    <div class="col-6 pb-4">
+                        <p class="fs-20">In the contest of classes, an interface is considered, all the methods and
+                            properties “exposed”, thus, everything that a user can interact with that belongs to that
+                            class.
+                            In this sense, the IS principles tell us that a class should only have the interface needed
+                            (SRP) and avoid methods that won’t work or that have no reason to be part of that class.
+                            This problem arises, primarily, when, a subclass inherits methods from a base class that it
+                            does not need.
+                        </p>
+                    </div>
+                    <h1 class="b1 pt-5"></h1>
+                    <div class="row align-items-center">
+                        <div class="col-6 pb-4">
+                            <img src="{{ url_for('static', filename='images/d.png') }}"
+                                 class="img-fluid"
+                                 alt="d">
+                        </div>
+                        <div class="col-6 pb-4">
+                            <p class="fs-20">Dependency should be on abstractions not concretions. High-level modules
+                                should not depend upon low-level modules. Both low and high level classes should depend
+                                on the same abstractions. Abstractions should not depend on details. Details should
+                                depend upon abstractions.
+
+
+                            </p>
+                        </div>
+
+
+                        <h1 class="b1 pt-5"></h1>
+                        <div class="container py-5">
+                            <p class="fs-14">Resources:
+                            <ul class="fs-14">
+                                <li>
+                                    <a href="https://towardsdatascience.com/solid-coding-in-python-1281392a6a94"
+                                       class="card-link darkgrey" target="_blank">SOLID</a>
+                                </li>
+                                <li>
+                                    <a href="https://pylint.pycqa.org/en/latest/"
+                                       class="card-link darkgrey" target="_blank">Pylint</a>
+                                </li>
+                                <li>
+                                    <a href="https://coverage.readthedocs.io/en/6.3.2/"
+                                       class="card-link darkgrey" target="_blank">Coverage</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/community/tutorials/unit-testing-python"
+                                       class="card-link darkgrey" target="_blank">Unit test</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 {% endblock %}
