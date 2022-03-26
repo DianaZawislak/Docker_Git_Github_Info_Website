@@ -102,10 +102,10 @@ font-size: 18px;
 }
 
 /*-------------change color of non-active pill---------------------*/
-.nav-pills .pill-2 .nav-link:not(.active) {
+/*.nav-pills .pill-2 .nav-link:not(.active) {
  background-color: #282828;
  color: white;
-}
+} */
 
 /*------------------change color of active pill --------------------*/
 /*.nav-pills .pill-1 .nav-link {
@@ -215,3 +215,8 @@ li { margin-bottom: 10px; }
     background-color: dimgray;
 }*/
 
+.active {
+     color: ghostwhite !important;
+    background-color: dimgray;
+    border-radius: 15px;
+}
