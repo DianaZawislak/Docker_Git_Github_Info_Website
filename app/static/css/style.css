@@ -218,5 +218,6 @@ li { margin-bottom: 10px; }
 .active {
      color: ghostwhite !important;
     background-color: dimgray;
-    border-radius: 15px;
+    border-radius: 17px;
 }
+
